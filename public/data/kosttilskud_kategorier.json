@@ -9,14 +9,13 @@
   },
   {
     "question": "catagory 2",
-    "options": ["Ingredienser", "Vitaminer", "Fiskeolie & Omega 3", "Mineraler", "Shop efter behov", "Andre kosttilskudsolier", "Kosttilskud", null]
+    "options": ["Ingredienser", "Vitaminer", "Fiskeolie & Omega 3", "Mineraler", "Shop efter behov", "Andre kosttilskudsolier", "Kosttilskud"]
   },
   {
     "question": "catagory 3",
     "options": [
       "Loppefrøskaller",
       "D-vitamin",
-      null,
       "Kollagen",
       "Multivitaminer",
       "Kalk",
@@ -79,7 +78,6 @@
   {
     "question": "catagory 4",
     "options": [
-      null,
       "Kollagenpiller",
       "Kollagenpulver",
       "Kosttilskud til håret",

@@ -1,0 +1,127 @@
+[
+  {
+    "spørgsmål": "er det vitaminer du leder efter?",
+    "svarListe": [
+      {
+        "svar": "nej",
+        "filter": [
+          "Multivitaminer til børn",
+          "D-vitamin",
+          "Multivitaminer",
+          "C-vitamin",
+          "Børnevitaminer",
+          "B-vitamin",
+          "A-vitamin",
+          "Vitaminer til gravide",
+          "K-vitamin",
+          "Øvrige børnevitaminer",
+          "B12 vitamin",
+          "D-vitamin til børn"
+        ]
+      },
+      {
+        "svar": "ja",
+        "filter": [
+          "Loppefrøskaller",
+          "Kollagen",
+          "Kalk",
+          "Multimineraler",
+          "Hjertet",
+          "Kosttilskud til kvinder",
+          "Hud, Hår & Negle",
+          "Slankekosttilskud",
+          "Magnesium",
+          "Q10",
+          "Mælkesyrebakterier",
+          "Jern",
+          "Omega Kombinationer",
+          "Zink",
+          "Rødkløver",
+          "Tranebær",
+          "Øvrige kosttilskud",
+          "Silica",
+          "Overgangsalder",
+          "Fiber",
+          "Knogler, Led & Muskler",
+          "Gurkemeje",
+          "Kolesterol",
+          "Selen",
+          "Krill Olie",
+          "Ingefær",
+          "Energi",
+          "Synet",
+          "Urter",
+          "Immunforsvar",
+          "Ginseng",
+          "Chrom",
+          "Blåbær",
+          "Torskelevertran ",
+          "Kredsløb",
+          "Folsyre",
+          "Fordøjelse",
+          "Graviditet",
+          "Hvidløg",
+          "Gele Royale",
+          "Æbleeddike",
+          "Hjerne ",
+          "Søvn",
+          "Jod & Kalium",
+          "Betacaroten",
+          "Aminosyre",
+          "Hyben",
+          "Chlorella",
+          "Øvrige olier",
+          "Baldrian",
+          "Menstruation",
+          "Kollagenpiller",
+          "Kollagenpulver",
+          "Kosttilskud til håret",
+          "Kosttilskud til neglene",
+          "Øvrige",
+          "Kosttilskud til huden",
+          " Omega-3",
+          "Mælkesyrebakterier til børn",
+          " Hukommelse"
+        ]
+      },
+      {
+        "svar": "ved ikke",
+        "filter": []
+      }
+    ]
+  },
+  {
+    "spørgsmål": "hvilke vitaminer leder du efter?",
+    "svarListe": [
+      {
+        "svar": "vitaminer til børn eller gravide",
+        "filter": ["D-vitamin", "Multivitaminer", "C-vitamin", "B-vitamin", "A-vitamin", "K-vitamin", "B12 vitamin"]
+      },
+      {
+        "svar": "multivitaminer",
+        "filter": ["D-vitamin", "C-vitamin", "Børnevitaminer", "B-vitamin", "A-vitamin", "Vitaminer til gravide", "K-vitamin", "Øvrige børnevitaminer", "B12 vitamin", "D-vitamin til børn"]
+      },
+      {
+        "svar": "B-vitaminer",
+        "filter": ["Multivitaminer til børn", "D-vitamin", "C-vitamin", "Børnevitaminer", "A-vitamin", "Vitaminer til gravide", "K-vitamin", "Øvrige børnevitaminer", "D-vitamin til børn"]
+      },
+      {
+        "svar": "A,D eller C-vitaminer",
+        "filter": ["Multivitaminer til børn", "Børnevitaminer", "B-vitamin", "Vitaminer til gravide", "K-vitamin", "Øvrige børnevitaminer", "B12 vitamin", "D-vitamin til børn"]
+      }
+    ]
+  },
+  {
+    "spørgsmål": "til børn eller voksne",
+    "svarListe": [
+      {
+        "svar": "børn",
+        "filter": ["D-vitamin", "Multivitaminer", "C-vitamin", "B-vitamin", "A-vitamin", "Vitaminer til gravide", "K-vitamin", "B12 vitamin"]
+      },
+      {
+        "svar": "voksne",
+        "filter": ["Multivitaminer til børn", "Børnevitaminer", "Øvrige børnevitaminer", "D-vitamin til børn"]
+      }
+    ]
+  }
+]
