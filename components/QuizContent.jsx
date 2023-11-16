@@ -9,7 +9,7 @@ export default function QuizContent(props) {
   const quizData = props.content;
   const products = props.products;
   const [questionCount, setQuestionCount] = useState(0);
-  const [currentFilters, setCurrentFilters] = useState(categories);
+  const [currentFilters, setCurrentFilters] = useState([]);
 
   let currentQuestion = quizData[questionCount];
   const onGoBack = () => {
@@ -21,10 +21,13 @@ export default function QuizContent(props) {
   const onAnswer = (filters) => {
     if (questionCount < quizData.length) {
       setQuestionCount(questionCount + 1);
-      setCurrentFilters(currentFilters.filter((i) => !filters.includes(i)));
+      setCurrentFilters(currentFilters.concat([filters]));
     }
   };
-  console.log(products.filter((i) => currentFilters.includes(i.categories[3] || i.categories[4])));
+  /* currentFilters.filter((i) => !filters.includes(i)) */
+  /*  */
+  console.log(currentFilters);
+  console.log(products.filter((i) => !currentFilters.flat().includes( i.categories[3] || i.categories[4])))
   return (
     <div className="grid place-items-center gap-8 p-4">
       <span>spørgsmål:{questionCount}</span>

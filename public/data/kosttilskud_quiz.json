@@ -99,7 +99,7 @@
       },
       {
         "svar": "multivitaminer",
-        "filter": ["D-vitamin", "C-vitamin", "Børnevitaminer", "B-vitamin", "A-vitamin", "Vitaminer til gravide", "K-vitamin", "Øvrige børnevitaminer", "B12 vitamin", "D-vitamin til børn"]
+        "filter": ["D-vitamin", "C-vitamin", "B-vitamin", "A-vitamin", "Vitaminer til gravide", "K-vitamin", "B12 vitamin", "D-vitamin til børn"]
       },
       {
         "svar": "B-vitaminer",
