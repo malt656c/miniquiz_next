@@ -14,19 +14,22 @@
     "baggrundsbillede": "img/pille.jpg",
     "svarListe": [
       {
-        "svar": "Kvinde",
+        "svar": "Dame",
         "filter": [],
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "ikon": "dame.svg"
       },
       {
         "svar": "Mand",
         "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
-        "nextQuestion": 4
+        "nextQuestion": 4,
+        "ikon": "mand.svg"
       },
       {
         "svar": "andet",
         "filter": [],
-        "nextQuestion": 1
+        "nextQuestion": 1,
+        "ikon": "nonbinaer.svg"
       }
     ]
   },
