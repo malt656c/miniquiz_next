@@ -1,5 +1,4 @@
 export default function QuizAnswerButton(props) {
-  const { content, clickEvent, ikon } = props;
   const buttonContent = () => {
     if (props.ikon === undefined) {
       return props.content;
