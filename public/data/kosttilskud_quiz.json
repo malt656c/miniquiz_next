@@ -1,10 +1,41 @@
 [
   {
-    "spørgsmål": "hvad er din alder? (spgsm:0)",
-    "baggrundsbillede": "img/slut.jpg",
+    "spørgsmål": "Start Quiz",
+    "baggrundsbillede": "img/forsidequiz.jpeg",
     "svarListe": [
       {
-        "svar": "0-10",
+        "svar": "Find dit Match",
+        "filter": []
+      }
+    ]
+  },
+  {
+    "spørgsmål": "hvad er dit køn? (spgsm:1)",
+    "baggrundsbillede": "img/pille.jpg",
+    "svarListe": [
+      {
+        "svar": "Kvinde",
+        "filter": [],
+        "nextQuestion": 2
+      },
+      {
+        "svar": "Mand",
+        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
+        "nextQuestion": 4
+      },
+      {
+        "svar": "andet",
+        "filter": [],
+        "nextQuestion": 1
+      }
+    ]
+  },
+  {
+    "spørgsmål": "hvad er din alder? (spgsm:0)",
+    "baggrundsbillede": "img/pillevingummi.jpg",
+    "svarListe": [
+      {
+        "svar": "Barn",
         "filter": [
           "Loppefrøskaller",
           "D-vitamin",
@@ -76,11 +107,11 @@
         ]
       },
       {
-        "svar": "11-19",
+        "svar": "Teen",
         "filter": ["Graviditet", "Vitaminer til gravide", "Overgangsalderen", "Vitaminer til Børn", "Slankekosttilskud", "Rødkløver", "Folsyre"]
       },
       {
-        "svar": "20-49",
+        "svar": "Voksen",
         "filter": ["Overgangsalderen", "Vitaminer til Børn"]
       },
       {
@@ -89,27 +120,7 @@
       }
     ]
   },
-  {
-    "spørgsmål": "hvad er dit køn? (spgsm:1)",
-    "baggrundsbillede": "img/slut.jpg",
-    "svarListe": [
-      {
-        "svar": "kvinde",
-        "filter": [],
-        "nextQuestion": 2
-      },
-      {
-        "svar": "Mand",
-        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
-        "nextQuestion": 4
-      },
-      {
-        "svar": "andet",
-        "filter": [],
-        "nextQuestion": 1
-      }
-    ]
-  },
+
   {
     "spørgsmål": "om dig (kvinde)(spgsm:2)",
     "svarListe": [
@@ -151,6 +162,19 @@
       }
     ]
   },
+  {
+    "spørgsmål": "Vi er klar til at finde dit perfekte match",
+    "baggrundsbillede": "img/pillevingummi2.jpg",
+    "svarListe": [
+      {
+        "svar": "nej",
+        "filter": [],
+        "ikon": "no.svg"
+      },
+      { "svar": "ja", "filter": [], "ikon": "yes.svg" }
+    ]
+  },
+
   {
     "spørgsmål": "Oplever du problemer med fordøjelsen? (spgsm:5)",
     "baggrundsbillede": "img/fordoejelse.jpg",
