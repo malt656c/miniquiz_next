@@ -191,7 +191,7 @@
   },
   {
     "spørgsmål": "Oplever du problemer med vægttab? (spgsm:7)",
-    "baggrundsbillede": "img/vagttab.jpg",
+    "baggrundsbillede": "img/vaegttab.jpg",
     "tip": "Selvom maden er sund, kan du stadig være i kalorieoverskud. Sørg for at spise mad der mætter og giv din krop ordentlig brændstof. Hvis du er i kalorieoverskud tager du på og omvendt.",
     "svarListe": [
       {
@@ -248,7 +248,7 @@
   },
   {
     "spørgsmål": "Lider du af hårtab og/eller svage negle (spgsm:10)",
-    "baggrundsbillede": "/img/haarognegle.jpg",
+    "baggrundsbillede": "img/haarognegle.jpg",
     "tip": "Massage på hænder og i hårbund sætter gang i blodcirkulationen og kan afhjælpe svage negle og hårtab",
     "svarListe": [
       {
