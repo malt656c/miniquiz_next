@@ -3,7 +3,7 @@ export default function QuizAnswerButton(props) {
     if (props.ikon === undefined) {
       return props.content;
     } else {
-      return <img src={`img/${props.ikon}`} className="mr-2" />;
+      return <img src={`img/${props.ikon}`} alt="picture" className="mr-2" />;
     }
   };
   return (
