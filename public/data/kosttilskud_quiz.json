@@ -1,26 +1,16 @@
 [
   {
     "spørgsmål": "er det vitaminer du leder efter?",
+    "tips": "Multivitaminer er altid en god ide",
     "svarListe": [
       {
         "svar": "nej",
-        "filter": [
-          "Multivitaminer til børn",
-          "D-vitamin",
-          "Multivitaminer",
-          "C-vitamin",
-          "Børnevitaminer",
-          "B-vitamin",
-          "A-vitamin",
-          "Vitaminer til gravide",
-          "K-vitamin",
-          "Øvrige børnevitaminer",
-          "B12 vitamin",
-          "D-vitamin til børn"
-        ]
+        "ikon": "no.svg",
+        "filter": ["Multivitaminer til børn", "D-vitamin", "Multivitaminer", "C-vitamin", "Børnevitaminer", "B-vitamin", "A-vitamin", "Vitaminer til gravide", "K-vitamin", "Øvrige børnevitaminer", "B12 vitamin", "D-vitamin til børn"]
       },
       {
         "svar": "ja",
+        "ikon": "yes.svg",
         "filter": [
           "Loppefrøskaller",
           "Kollagen",
@@ -83,10 +73,6 @@
           "Mælkesyrebakterier til børn",
           " Hukommelse"
         ]
-      },
-      {
-        "svar": "ved ikke",
-        "filter": []
       }
     ]
   },
