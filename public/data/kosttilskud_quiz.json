@@ -139,12 +139,14 @@
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": "end"
+        "nextQuestion": "end",
+        "ikon":"yes.svg"
       },
       {
         "svar": "nej",
         "filter": ["Loppefrøskaller", "Fordøjelse"],
-        "nextQuestion": "end"
+        "nextQuestion": "end",
+        "ikon":"no.svg"
       }
     ]
   },
@@ -172,12 +174,14 @@
         "Fibre",
         "Mælkesyrebakterier"
         ],
-        "nextQuestion": 6
+        "nextQuestion": 6,
+        "ikon":"no.svg"
       },
       {
-        "svar": "nej",
+        "svar": "ja",
         "filter": [],
-        "nextQuestion": 6
+        "nextQuestion": 6,
+        "ikon":"yes.svg"
       }
     ]
   }
