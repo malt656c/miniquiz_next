@@ -3,11 +3,13 @@ import QuizAnswerButton from "./QuizAnswerButton";
 import QuizBackButton from "./QuizBackButton";
 import QuizQuestion from "./QuizQuestion";
 import { useState } from "react";
+import Tips from "./Tips";
 
 export default function QuizContent(props) {
   const categories = props.categories;
   const quizData = props.content;
   const products = props.products;
+  const tips = props.tips;
   const [questionCount, setQuestionCount] = useState(0);
   const [currentFilters, setCurrentFilters] = useState([]);
 
@@ -25,9 +27,9 @@ export default function QuizContent(props) {
     }
   };
   console.log(currentFilters);
-  console.log(products.filter((i) => !currentFilters.flat().includes( i.categories[3] || i.categories[4])))
+  console.log(products.filter((i) => !currentFilters.flat().includes(i.categories[3] || i.categories[4])));
   return (
-    <div className="grid place-items-center gap-8 p-4">
+    <div className="grid place-items-center gap-8 p-4  bg-[url('/img/fordoejelse.jpg')] bg-cover">
       <span>spørgsmål:{questionCount}</span>
       <QuizQuestion content={currentQuestion?.spørgsmål} />
 
@@ -40,9 +42,13 @@ export default function QuizContent(props) {
               clickEvent={() => {
                 onAnswer(s.filter);
               }}
+              ikon={`img/${s.ikon}`}
             />
           );
         })}
+      </div>
+      <div className="grid place-items-center gap-8 p-4">
+        <Tips />
       </div>
 
       <QuizBackButton clickEvent={onGoBack} />
