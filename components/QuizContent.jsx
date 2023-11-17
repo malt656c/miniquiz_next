@@ -33,7 +33,7 @@ export default function QuizContent(props) {
   console.log(currentFilters);
   console.log(products.filter((i) => !currentFilters.flat().includes(i.categories[3] || i.categories[4])));
   return (
-    <div className="grid place-items-center gap-8 p-4">
+    <div className="grid place-items-center gap-8 p-4 bg-cover bg-no-repeat bg-center" style={backgroundImageStyle}>
       <span>spørgsmål:{questionCount}</span>
       <QuizQuestion content={currentQuestion?.spørgsmål} />
 
@@ -46,7 +46,7 @@ export default function QuizContent(props) {
               clickEvent={() => {
                 onAnswer(s.filter);
               }}
-              ikon={`img/${s.ikon}`}
+              ikon={s.ikon}
             />
           );
         })}
