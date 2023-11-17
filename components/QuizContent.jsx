@@ -14,6 +14,10 @@ export default function QuizContent(props) {
   const [currentFilters, setCurrentFilters] = useState([]);
 
   let currentQuestion = quizData[questionCount];
+  let backgroundImageStyle = {
+    backgroundImage: `url(${currentQuestion?.baggrundsbillede})`,
+  };
+  console.log(backgroundImageStyle);
   const onGoBack = () => {
     if (questionCount !== 0) {
       setQuestionCount(questionCount - 1);
@@ -29,7 +33,7 @@ export default function QuizContent(props) {
   console.log(currentFilters);
   console.log(products.filter((i) => !currentFilters.flat().includes(i.categories[3] || i.categories[4])));
   return (
-    <div className="grid place-items-center gap-8 p-4  bg-[url('/img/fordoejelse.jpg')] bg-cover">
+    <div className="grid place-items-center gap-8 p-4">
       <span>spørgsmål:{questionCount}</span>
       <QuizQuestion content={currentQuestion?.spørgsmål} />
 
@@ -48,7 +52,7 @@ export default function QuizContent(props) {
         })}
       </div>
       <div className="grid place-items-center gap-8 p-4">
-        <Tips />
+        <Tips content={currentQuestion?.tip} />
       </div>
 
       <QuizBackButton clickEvent={onGoBack} />
