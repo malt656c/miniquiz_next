@@ -24,8 +24,6 @@ export default function QuizContent(props) {
       setCurrentFilters(currentFilters.concat([filters]));
     }
   };
-  /* currentFilters.filter((i) => !filters.includes(i)) */
-  /*  */
   console.log(currentFilters);
   console.log(products.filter((i) => !currentFilters.flat().includes( i.categories[3] || i.categories[4])))
   return (

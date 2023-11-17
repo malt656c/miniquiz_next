@@ -1,29 +1,14 @@
 [
   {
-    "spørgsmål": "er det vitaminer du leder efter?",
+    "spørgsmål": "hvad er din alder? (spgsm:0)",
     "svarListe": [
       {
-        "svar": "nej",
-        "filter": [
-          "Multivitaminer til børn",
-          "D-vitamin",
-          "Multivitaminer",
-          "C-vitamin",
-          "Børnevitaminer",
-          "B-vitamin",
-          "A-vitamin",
-          "Vitaminer til gravide",
-          "K-vitamin",
-          "Øvrige børnevitaminer",
-          "B12 vitamin",
-          "D-vitamin til børn"
-        ]
-      },
-      {
-        "svar": "ja",
+        "svar": "0-10",
         "filter": [
           "Loppefrøskaller",
+          "D-vitamin",
           "Kollagen",
+          "Multivitaminer",
           "Kalk",
           "Multimineraler",
           "Hjertet",
@@ -32,9 +17,11 @@
           "Slankekosttilskud",
           "Magnesium",
           "Q10",
+          "C-vitamin",
           "Mælkesyrebakterier",
           "Jern",
           "Omega Kombinationer",
+          "B-vitamin",
           "Zink",
           "Rødkløver",
           "Tranebær",
@@ -44,13 +31,16 @@
           "Fiber",
           "Knogler, Led & Muskler",
           "Gurkemeje",
+          "A-vitamin",
           "Kolesterol",
           "Selen",
           "Krill Olie",
           "Ingefær",
           "Energi",
           "Synet",
+          "Vitaminer til gravide",
           "Urter",
+          "K-vitamin",
           "Immunforsvar",
           "Ginseng",
           "Chrom",
@@ -77,50 +67,117 @@
           "Kollagenpulver",
           "Kosttilskud til håret",
           "Kosttilskud til neglene",
+          "B12 vitamin",
           "Øvrige",
           "Kosttilskud til huden",
           " Omega-3",
-          "Mælkesyrebakterier til børn",
           " Hukommelse"
         ]
       },
       {
-        "svar": "ved ikke",
-        "filter": []
+        "svar": "11-19",
+        "filter": ["Graviditet", "Vitaminer til gravide", "Overgangsalderen", "Vitaminer til Børn", "Slankekosttilskud", "Rødkløver", "Folsyre"]
+      },
+      {
+        "svar": "20-49",
+        "filter": ["Overgangsalderen", "Vitaminer til Børn"]
+      },
+      {
+        "svar": "50+",
+        "filter": ["Gravitditet", "Vitaminer til gravide", "Vitaminer til Børn"]
       }
     ]
   },
   {
-    "spørgsmål": "hvilke vitaminer leder du efter?",
+    "spørgsmål": "hvad er dit køn? (spgsm:1)",
     "svarListe": [
       {
-        "svar": "vitaminer til børn eller gravide",
-        "filter": ["D-vitamin", "Multivitaminer", "C-vitamin", "B-vitamin", "A-vitamin", "K-vitamin", "B12 vitamin"]
+        "svar": "kvinde",
+        "filter": [],
+        "nextQuestion": 2
       },
       {
-        "svar": "multivitaminer",
-        "filter": ["D-vitamin", "C-vitamin", "B-vitamin", "A-vitamin", "Vitaminer til gravide", "K-vitamin", "B12 vitamin", "D-vitamin til børn"]
+        "svar": "Mand",
+        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
+        "nextQuestion": 4
       },
       {
-        "svar": "B-vitaminer",
-        "filter": ["Multivitaminer til børn", "D-vitamin", "C-vitamin", "Børnevitaminer", "A-vitamin", "Vitaminer til gravide", "K-vitamin", "Øvrige børnevitaminer", "D-vitamin til børn"]
-      },
-      {
-        "svar": "A,D eller C-vitaminer",
-        "filter": ["Multivitaminer til børn", "Børnevitaminer", "B-vitamin", "Vitaminer til gravide", "K-vitamin", "Øvrige børnevitaminer", "B12 vitamin", "D-vitamin til børn"]
+        "svar": "andet",
+        "filter": [],
+        "nextQuestion": 1
       }
     ]
   },
   {
-    "spørgsmål": "til børn eller voksne",
+    "spørgsmål": "om dig (kvinde)(spgsm:2)",
     "svarListe": [
       {
-        "svar": "børn",
-        "filter": ["D-vitamin", "Multivitaminer", "C-vitamin", "B-vitamin", "A-vitamin", "Vitaminer til gravide", "K-vitamin", "B12 vitamin"]
+        "svar": "gravid",
+        "filter": [],
+        "nextQuestion": 3
       },
       {
-        "svar": "voksne",
-        "filter": ["Multivitaminer til børn", "Børnevitaminer", "Øvrige børnevitaminer", "D-vitamin til børn"]
+        "svar": "overgangsalder",
+        "filter": ["Folsyre"],
+        "nextQuestion": 3
+      },
+      {
+        "svar": "Blodfortyndende medicin",
+        "filter": ["Folsyre", "Fiskeolie & Omega 3"],
+        "nextQuestion": 3
+      },
+      {
+        "svar": "andet",
+        "filter": ["Folsyre"],
+        "nextQuestion": 3
+      }
+    ]
+  },
+  {
+    "spørgsmål": "Oplever du problemer med Fordøjelse? (spgsm:3)",
+    "svarListe": [
+      {
+        "svar": "ja",
+        "filter": [],
+        "nextQuestion": "end"
+      },
+      {
+        "svar": "nej",
+        "filter": ["Loppefrøskaller", "Fordøjelse"],
+        "nextQuestion": "end"
+      }
+    ]
+  },
+  {
+    "spørgsmål": "om dig (mand) (spgsm:4)",
+    "svarListe": [
+      {
+        "svar": "Blodfortyndende medicin",
+        "filter": ["Fiskeolie & Omega 3", "Krill Olie", "Omega kombinationer", "Torskelevertran", " Omega-3"],
+        "nextQuestion": 5
+      },
+      {
+        "svar": "andet",
+        "filter": [],
+        "nextQuestion": 5
+      }
+    ]
+  },  {
+    "spørgsmål": "Oplever du problemer med Fordøjelse? (spgsm:5)",
+    "svarListe": [
+      {
+        "svar": "nej",
+        "filter": ["Loppefrøskaller",
+        "Fordøjesle",
+        "Fibre",
+        "Mælkesyrebakterier"
+        ],
+        "nextQuestion": 6
+      },
+      {
+        "svar": "nej",
+        "filter": [],
+        "nextQuestion": 6
       }
     ]
   }
