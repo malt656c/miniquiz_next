@@ -28,11 +28,25 @@
     ]
   },
   {
-    "spørgsmål": "hvad er din alder? spgs0",
+    "spørgsmål": "Hvad er din alder?",
+    "baggrundsbillede": "img/immun.jpg",
+    "svarListe": [
+      {
+        "svar": "Under 50 år",
+        "filter": []
+      },
+      {
+        "svar": "Over 50 år",
+        "filter": ["Gravitditet", "Vitaminer til gravide", "Vitaminer til Børn"]
+      }
+    ]
+  },
+  {
+    "spørgsmål": "Hvad Passer bedst til dig",
     "baggrundsbillede": "img/pillevingummi.jpg",
     "svarListe": [
       {
-        "svar": "Barn",
+        "svar": "Under 15 år",
         "filter": [
           "Loppefrøskaller",
           "D-vitamin",
@@ -103,23 +117,17 @@
           " Hukommelse"
         ]
       },
+
       {
-        "svar": "Teen",
-        "filter": ["Graviditet", "Vitaminer til gravide", "Overgangsalderen", "Vitaminer til Børn", "Slankekosttilskud", "Rødkløver", "Folsyre"]
-      },
-      {
-        "svar": "Voksen",
+        "svar": "Over 15 år",
         "filter": ["Overgangsalderen", "Vitaminer til Børn"]
-      },
-      {
-        "svar": "50+",
-        "filter": ["Gravitditet", "Vitaminer til gravide", "Vitaminer til Børn"]
       }
     ]
   },
 
   {
     "spørgsmål": "om dig (kvinde)",
+    "baggrundsbillede": "img/slut.jpg",
     "svarListe": [
       {
         "svar": "gravid",
