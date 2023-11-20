@@ -7,7 +7,7 @@ export default function QuizAnswerButton(props) {
     }
   };
   return (
-    <button className="p-2 bg-green-beige rounded-xl flex-grow click-answer-button place-items-center text-xl" onClick={props.clickEvent}>
+    <button className="p-2 bg-green-beige rounded-xl click-answer-button place-items-center text-xl mt-56" onClick={props.clickEvent}>
       {buttonContent()}
     </button>
   );

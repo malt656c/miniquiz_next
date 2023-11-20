@@ -39,7 +39,7 @@ export default function QuizContent(props) {
         <QuizQuestion content={currentQuestion?.spørgsmål} />
       </div>
 
-      <div className="flex gap-4 px-2 flex-wrap w-26 mt-56">
+      <div className="flex gap-4 px-2 flex-wrap w-26 ">
         {currentQuestion?.svarListe.map((s) => {
           return (
             <QuizAnswerButton
