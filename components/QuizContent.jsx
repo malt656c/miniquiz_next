@@ -33,11 +33,13 @@ export default function QuizContent(props) {
   console.log(currentFilters);
   console.log(products.filter((i) => !currentFilters.flat().includes(i.categories[3] || i.categories[4])));
   return (
-    <div className="grid place-items-center gap-8 p-4 bg-cover bg-no-repeat bg-center" style={backgroundImageStyle}>
+    <div className="grid place-items-center bg-no-repeat bg-center object-contain h-150 w-90" style={backgroundImageStyle}>
       <span>spørgsmål:{questionCount}</span>
-      <QuizQuestion content={currentQuestion?.spørgsmål} />
+      <div className="w-96 text-xl">
+        <QuizQuestion content={currentQuestion?.spørgsmål} />
+      </div>
 
-      <div className="flex gap-4 p-2 flex-wrap max-w-xl">
+      <div className="flex gap-4 px-2 flex-wrap w-26 mt-56">
         {currentQuestion?.svarListe.map((s) => {
           return (
             <QuizAnswerButton
@@ -51,7 +53,7 @@ export default function QuizContent(props) {
           );
         })}
       </div>
-      <div className="grid place-items-center gap-8 p-4">
+      <div className="grid place-items-center p-4 w-80 h-40">
         <Tips content={currentQuestion?.tip} />
       </div>
 
