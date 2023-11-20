@@ -10,7 +10,7 @@
     ]
   },
   {
-    "spørgsmål": "hvad er dit køn?",
+    "spørgsmål": "Hvad er dit køn?",
     "baggrundsbillede": "img/pille.jpg",
     "svarListe": [
       {
@@ -33,7 +33,7 @@
     "svarListe": [
       {
         "svar": "Under 50 år",
-        "filter": []
+        "filter": ["Overgangsalder"]
       },
       {
         "svar": "Over 50 år",
@@ -120,7 +120,7 @@
 
       {
         "svar": "Over 15 år",
-        "filter": ["Overgangsalderen", "Vitaminer til Børn"]
+        "filter": ["Vitaminer til Børn"]
       }
     ]
   },
@@ -157,7 +157,7 @@
     "svarListe": [
       {
         "svar": "Blodfortyndende medicin",
-        "filter": ["Fiskeolie & Omega 3", "Krill Olie", "Omega kombinationer", "Torskelevertran", " Omega-3"],
+        "filter": ["Krill Olie", "Omega kombinationer", "Torskelevertran", " Omega-3"],
         "nextQuestion": 5
       },
       {
@@ -206,7 +206,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": [],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -225,7 +225,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["Slankekosttilskud"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -244,7 +244,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["C-vitamin", "Immunforsvar", "Gele Royale"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -263,7 +263,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["Baldrian", "Energi", "Ginseng", "Søvn"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -282,7 +282,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["Kollagen", "Hud, Hår & Negle", "Silica", "A-vitamin", "Betacaroten", "Zink", "Selen", "Kollagenpiller", "Kollagenpulver", "Kosttilskud til håret", "Kosttilskud til neglene", "Kosttilskud til huden"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -301,7 +301,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": [],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -320,7 +320,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": [],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -339,7 +339,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": [],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -358,7 +358,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": [],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
