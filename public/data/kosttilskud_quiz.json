@@ -367,5 +367,24 @@
         "ikon": "yes.svg"
       }
     ]
+  },
+  {
+    "spørgsmål": "Tillykke, du har gennemført quizzen!",
+    "baggrundsbillede": "img/slut.jpg",
+    "tip": "Vi har fundet en række produkter som kan dække dine behov. Er du interesseret i at se dem?",
+    "svarListe": [
+      {
+        "svar": "nej",
+        "filter": [],
+        "nextQuestion": 7,
+        "ikon": "no.svg"
+      },
+      {
+        "svar": "ja",
+        "fitler": [],
+        "nextQuestion": 7,
+        "ikon": "yes.svg"
+      }
+    ]
   }
 ]
