@@ -25,5 +25,10 @@ module.exports = {
       desktop: "1280px",
       // => @media (min-width: 1280px) { ... }
     },
+
+    fontFamily: {
+      centuryGothic: ["Century Gothic", "sans-serif"],
+      headings: ["ltc-caslon-pro", "serif"], // Ensure fonts with spaces have " " surrounding it.
+    },
   },
 };
