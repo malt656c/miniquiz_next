@@ -1,7 +1,7 @@
 [
   {
     "spørgsmål": "Start Quiz",
-    "baggrundsbillede": "img/forsidequiz.jpeg",
+    "baggrundsbillede": "img/forside.jpeg",
     "svarListe": [
       {
         "svar": "Find dit Match",
@@ -24,12 +24,6 @@
         "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
         "nextQuestion": 4,
         "ikon": "mand.svg"
-      },
-      {
-        "svar": "andet",
-        "filter": [],
-        "nextQuestion": 1,
-        "ikon": "nonbinaer.svg"
       }
     ]
   },

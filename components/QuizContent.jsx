@@ -53,7 +53,7 @@ export default function QuizContent(props) {
           );
         })}
       </div>
-      <div className="grid place-items-center p-4 w-80 h-40">
+      <div className="grid place-items-center p-2 w-80 h-40">
         <Tips content={currentQuestion?.tip} />
       </div>
 
