@@ -37,7 +37,16 @@
       },
       {
         "svar": "Over 50 år",
-        "filter": ["Graviditet", "Vitaminer til gravide", "Vitaminer til Børn", "Øvrige børnevitaminer", "Multivitaminer til børn", "Mælkesyrebakterier til børn", "D-vitamin til børn", "Børnevitaminer"]
+        "filter": [
+          "Graviditet",
+          "Vitaminer til gravide",
+          "Vitaminer til Børn",
+          "Øvrige børnevitaminer",
+          "Multivitaminer til børn",
+          "Mælkesyrebakterier til børn",
+          "D-vitamin til børn",
+          "Børnevitaminer"
+        ]
       }
     ]
   },
@@ -120,7 +129,7 @@
 
       {
         "svar": "Over 15 år",
-        "filter": ["Vitaminer til Børn", "Øvrige børnevitaminer","Multivitaminer til børn", "Mælkesyrebakterier til børn", "D-vitamin til børn", "Børnevitaminer" ]
+        "filter": ["Vitaminer til Børn", "Øvrige børnevitaminer", "Multivitaminer til børn", "Mælkesyrebakterier til børn", "D-vitamin til børn", "Børnevitaminer"]
       }
     ]
   },
@@ -139,7 +148,7 @@
         "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Menstruation"],
         "nextQuestion": 3
       },
-  
+
       {
         "svar": "andet",
         "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Overgangsalder"],
@@ -262,7 +271,20 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Kollagen", "Hud, Hår & Negle", "Silica", "A-vitamin", "Betacaroten", "Zink", "Selen", "Kollagenpiller", "Kollagenpulver", "Kosttilskud til håret", "Kosttilskud til neglene", "Kosttilskud til huden"],
+        "filter": [
+          "Kollagen",
+          "Hud, Hår & Negle",
+          "Silica",
+          "A-vitamin",
+          "Betacaroten",
+          "Zink",
+          "Selen",
+          "Kollagenpiller",
+          "Kollagenpulver",
+          "Kosttilskud til håret",
+          "Kosttilskud til neglene",
+          "Kosttilskud til huden"
+        ],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -350,114 +372,4 @@
       }
     ]
   }
-]
-
-
-
-//---Alt under her slettes asap----//
-
-[
-  
-  "Multivitaminer",
-  "Kalk",
-  "Multimineraler",
-  "Hjertet",
-
-  "Magnesium",
-  "Q10",
-  
-  
-  ,
-  "Jern",
-  
-  "B-vitamin",
-  
-  
-  "Øvrige kosttilskud",
-
-  
-  "Kolesterol",
-  
-  "Synet",
-  
-  "Urter",
-  "K-vitamin",
-  
-  
-  "Chrom",
-  "Blåbær",
-  
-  "Kredsløb",
-  
-  
-  
-  
-  "Hjerne ",
- 
-  "Jod & Kalium",
-  
-  "Aminosyre",
-  
-  
-  "Øvrige olier",
- 
-  
-  "B12 vitamin",
-  "Øvrige",
-  
-]
-
-
-
-//---Alt under her slettes asap----//
-
-[
-  
-  "Multivitaminer",
-  "Kalk",
-  "Multimineraler",
-  "Hjertet",
-
-  "Magnesium",
-  "Q10",
-  
-  
-  ,
-  "Jern",
-  
-  "B-vitamin",
-  
-  
-  "Øvrige kosttilskud",
-
-  
-  "Kolesterol",
-  
-  "Synet",
-  
-  "Urter",
-  "K-vitamin",
-  
-  
-  "Chrom",
-  "Blåbær",
-  
-  "Kredsløb",
-  
-  
-  
-  
-  "Hjerne ",
- 
-  "Jod & Kalium",
-  
-  "Aminosyre",
-  
-  
-  "Øvrige olier",
- 
-  
-  "B12 vitamin",
-  "Øvrige",
-  
 ]
