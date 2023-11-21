@@ -34,7 +34,6 @@ export default function QuizContent(props) {
   console.log(products.filter((i) => !currentFilters.flat().includes(i.categories[3] || i.categories[4])));
   return (
     <div className="grid place-items-center bg-no-repeat bg-center object-contain h-150 w-90" style={backgroundImageStyle}>
-      <span>spørgsmål:{questionCount}</span>
       <div className="w-96 text-xl">
         <QuizQuestion content={currentQuestion?.spørgsmål} />
       </div>
