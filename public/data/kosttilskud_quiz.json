@@ -4,36 +4,25 @@
     "baggrundsbillede": "img/forside.jpeg",
     "svarListe": [
       {
-        "svar": "Find dit Match",
-        "filter": []
-      }
-    ]
-  },
-  {
-    "spørgsmål": "Hvad er dit køn?",
-    "baggrundsbillede": "img/pille.jpg",
-    "svarListe": [
-      {
-        "svar": "Dame",
+        "svar": "start",
         "filter": [],
-        "nextQuestion": 2,
-        "ikon": "dame.svg"
-      },
-      {
-        "svar": "Mand",
-        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
-        "nextQuestion": 4,
-        "ikon": "mand.svg"
+        "nextQuestion": 1
+      }  ,    {
+        "svar": "start",
+        "filter": [],
+        "nextQuestion": 1
       }
     ]
   },
+
   {
     "spørgsmål": "Hvad er din alder?",
     "baggrundsbillede": "img/immun.jpg",
     "svarListe": [
       {
         "svar": "Under 50 år",
-        "filter": []
+        "filter": [],
+        "nextQuestion": 2
       },
       {
         "svar": "Over 50 år",
@@ -46,12 +35,13 @@
           "Mælkesyrebakterier til børn",
           "D-vitamin til børn",
           "Børnevitaminer"
-        ]
+        ],
+        "nextQuestion": 5
       }
     ]
   },
   {
-    "spørgsmål": "Hvad Passer bedst til dig",
+    "spørgsmål": "Er du over eller under 15?",
     "baggrundsbillede": "img/pillevingummi.jpg",
     "svarListe": [
       {
@@ -124,148 +114,198 @@
           "Kosttilskud til huden",
           " Omega-3",
           " Hukommelse"
-        ]
+        ],
+        "nextQuestion": 3
       },
-
       {
         "svar": "Over 15 år",
-        "filter": ["Vitaminer til Børn", "Øvrige børnevitaminer", "Multivitaminer til børn", "Mælkesyrebakterier til børn", "D-vitamin til børn", "Børnevitaminer"]
+        "filter": ["Vitaminer til Børn", "Øvrige børnevitaminer", "Multivitaminer til børn", "Mælkesyrebakterier til børn", "D-vitamin til børn", "Børnevitaminer"],
+        "nextQuestion": 4
       }
     ]
   },
-
   {
-    "spørgsmål": "om dig (kvinde)",
+    "spørgsmål": "Hvad er dit køn? (<15)",
+    "baggrundsbillede": "img/pille.jpg",
+    "svarListe": [
+      {
+        "svar": "kvinde",
+        "filter": [],
+        "nextQuestion": 8,
+        "ikon": "dame.svg"
+      },
+      {
+        "svar": "Mand",
+        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
+        "nextQuestion": 8,
+        "ikon": "mand.svg"
+      }
+    ]
+  },
+  {
+    "spørgsmål": "Hvad er dit køn? (50>_>15)",
+    "baggrundsbillede": "img/pille.jpg",
+    "svarListe": [
+      {
+        "svar": "kvinde",
+        "filter": [],
+        "nextQuestion": 6,
+        "ikon": "dame.svg"
+      },
+      {
+        "svar": "Mand",
+        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
+        "nextQuestion": 8,
+        "ikon": "mand.svg"
+      }
+    ]
+  },  {
+    "spørgsmål": "Hvad er dit køn? (>50)",
+    "baggrundsbillede": "img/pille.jpg",
+    "svarListe": [
+      {
+        "svar": "kvinde",
+        "filter": [],
+        "nextQuestion": 7,
+        "ikon": "dame.svg"
+      },
+      {
+        "svar": "Mand",
+        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
+        "nextQuestion": 8,
+        "ikon": "mand.svg"
+      }
+    ]
+  },
+  {
+    "spørgsmål": "Er du gravid?",
     "baggrundsbillede": "img/slut.jpg",
     "svarListe": [
       {
-        "svar": "gravid",
+        "svar": "ja",
         "filter": ["Overgangsalder", "Menstruation"],
-        "nextQuestion": 3
+        "nextQuestion": 8
       },
       {
-        "svar": "Overgangsalder",
+        "svar": "nej",
+        "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Overgangsalder"],
+        "nextQuestion": 8
+      }
+    ]
+  },  {
+    "spørgsmål": "Er du i overgangsalderen?",
+    "baggrundsbillede": "img/slut.jpg",
+    "svarListe": [
+      {
+        "svar": "ja",
         "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Menstruation"],
-        "nextQuestion": 3
+        "nextQuestion": 8
       },
 
       {
-        "svar": "andet",
+        "svar": "nej",
         "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Overgangsalder"],
-        "nextQuestion": 3
+        "nextQuestion": 8
       }
     ]
   },
   {
-    "spørgsmål": "Vi er klar til at finde dit perfekte match",
-    "baggrundsbillede": "img/pillevingummi2.jpg",
-    "svarListe": [
-      {
-        "svar": "nej",
-        "filter": [],
-        "ikon": "no.svg"
-      },
-      { "svar": "ja", "filter": [], "ikon": "yes.svg" }
-    ]
-  },
-
-  {
-    "spørgsmål": "Oplever du problemer med fordøjelsen? (spgsm:5)",
+    "spørgsmål": "Oplever du problemer med fordøjelsen?",
     "baggrundsbillede": "img/fordoejelse.jpg",
     "tip": "Mange er sensitive overfor gluten og/eller laktose uden at være allergiske. det betyder dog stadig at du kan have svært ved at fordøje.",
     "svarListe": [
       {
         "svar": "nej",
         "filter": ["Loppefrøskaller", "Fordøjelse", "Fiber", "Mælkesyrebakterier"],
-        "nextQuestion": 6,
+        "nextQuestion": 9,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 6,
+        "nextQuestion": 9,
         "ikon": "yes.svg"
       }
     ]
   },
   {
-    "spørgsmål": "Føler du dig stresset? (spgsm:6)",
+    "spørgsmål": "Føler du dig stresset?",
     "baggrundsbillede": "img/stress.jpg",
     "tip": "Der findes flere kosttilskud som kan være med til at give din krop balance. Rosenrod fx er et adaptogen som tilpasser sig din krop og giver dig det du har brug for.",
     "svarListe": [
       {
         "svar": "nej",
         "filter": [],
-        "nextQuestion": 6,
+        "nextQuestion": 10,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 6,
+        "nextQuestion": 10,
         "ikon": "yes.svg"
       }
     ]
   },
   {
-    "spørgsmål": "Oplever du problemer med vægttab? (spgsm:7)",
+    "spørgsmål": "Oplever du problemer med vægttab?",
     "baggrundsbillede": "img/vaegttab.jpg",
     "tip": "Selvom maden er sund, kan du stadig være i kalorieoverskud. Sørg for at spise mad der mætter og giv din krop ordentlig brændstof. Hvis du er i kalorieoverskud tager du på og omvendt.",
     "svarListe": [
       {
         "svar": "nej",
         "filter": ["Slankekosttilskud"],
-        "nextQuestion": 6,
+        "nextQuestion": 11,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 6,
+        "nextQuestion": 11,
         "ikon": "yes.svg"
       }
     ]
   },
   {
-    "spørgsmål": "Bliver du tit syg eller har svækket immunforsvar (spgsm:8)?",
+    "spørgsmål": "Bliver du tit syg eller har svækket immunforsvar?",
     "baggrundsbillede": "img/immun.jpg",
     "tip": "Kroppen bliver svækket når du er stresset, ikke spiser ordentligt osv. Pas på dig selv og sørg for at få en god multivitamin. Specielt i de hårde perioder.",
     "svarListe": [
       {
         "svar": "nej",
         "filter": ["C-vitamin", "Immunforsvar", "Gele Royale"],
-        "nextQuestion": 6,
+        "nextQuestion": 12,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 6,
+        "nextQuestion": 12,
         "ikon": "yes.svg"
       }
     ]
   },
   {
-    "spørgsmål": "Mangler du energi og oplever du dårlig søvn? (spgsm:9)",
+    "spørgsmål": "Mangler du energi og oplever du dårlig søvn?",
     "baggrundsbillede": "img/soevn.jpg",
     "tip": "Tag en lur",
     "svarListe": [
       {
         "svar": "nej",
         "filter": ["Baldrian", "Energi", "Ginseng", "Søvn"],
-        "nextQuestion": 6,
+        "nextQuestion": 13,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 6,
+        "nextQuestion": 13,
         "ikon": "yes.svg"
       }
     ]
   },
   {
-    "spørgsmål": "Lider du af hårtab og/eller svage negle (spgsm:10)",
+    "spørgsmål": "Lider du af hårtab og/eller svage negle?",
     "baggrundsbillede": "img/haarognegle.jpg",
     "tip": "Massage på hænder og i hårbund sætter gang i blodcirkulationen og kan afhjælpe svage negle og hårtab",
     "svarListe": [
@@ -285,70 +325,70 @@
           "Kosttilskud til neglene",
           "Kosttilskud til huden"
         ],
-        "nextQuestion": 6,
+        "nextQuestion": 14,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 6,
+        "nextQuestion": 14,
         "ikon": "yes.svg"
       }
     ]
   },
   {
-    "spørgsmål": "Oplever du besvær ved dine led og muskler? (spgsm:11)",
+    "spørgsmål": "Oplever du besvær ved dine led og muskler?",
     "baggrundsbillede": "img/musklerogled.jpg",
     "tip": "Det er ikke unormalt at få inflammation omkring leddene. Gurkemeje virker anti-inflammatorisk og hjælper på inflammation i  kroppen",
     "svarListe": [
       {
         "svar": "nej",
         "filter": ["Gurkemeje", "Ingefær", "Knogler, Led & Muskler"],
-        "nextQuestion": 6,
+        "nextQuestion": 15,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 6,
+        "nextQuestion": 15,
         "ikon": "yes.svg"
       }
     ]
   },
   {
-    "spørgsmål": "Ønsker du at detoxe kroppen? (spgsm:12)",
+    "spørgsmål": "Ønsker du at detoxe kroppen?",
     "baggrundsbillede": "img/detox.jpg",
     "tip": "Tag en lur",
     "svarListe": [
       {
         "svar": "nej",
         "filter": ["Hvidløg", "Hyben", "Æbleeddike", "Chlorella"],
-        "nextQuestion": 6,
+        "nextQuestion": 16,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 6,
+        "nextQuestion": 16,
         "ikon": "yes.svg"
       }
     ]
   },
   {
-    "spørgsmål": "Oplever du hukommelsesbesvær? (spgsm:13)",
+    "spørgsmål": "Oplever du hukommelsesbesvær?",
     "baggrundsbillede": "img/hukommelse.jpg",
     "tip": "Rosenrod er det man kalder et adaptogen som giver kroppen hvad den har brug for",
     "svarListe": [
       {
         "svar": "nej",
         "filter": ["Krill Olie", "Omega Kombinationer", " Omega-3", "Torskelevertran ", " Hukommelse"],
-        "nextQuestion": 6,
+        "nextQuestion": 17,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 6,
+        "nextQuestion": 17,
         "ikon": "yes.svg"
       }
     ]
@@ -361,15 +401,26 @@
       {
         "svar": "nej",
         "filter": ["D-vitamin"],
-        "nextQuestion": 6,
+        "nextQuestion": "end",
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 6,
+        "nextQuestion": "end",
         "ikon": "yes.svg"
       }
+    ]
+  } , {
+    "spørgsmål": "Vi er klar til at finde dit perfekte match",
+    "baggrundsbillede": "img/pillevingummi2.jpg",
+    "svarListe": [
+      {
+        "svar": "nej",
+        "filter": [],
+        "ikon": "no.svg"
+      },
+      { "svar": "ja", "filter": [], "ikon": "yes.svg" }
     ]
   }
 ]
