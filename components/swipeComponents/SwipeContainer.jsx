@@ -4,7 +4,8 @@ const quizFile = await fs.readFile(process.cwd() + "/public/data/kosttilskud_qui
 const content = JSON.parse(quizFile);
 export default function SwipeContainer() {
   return (
-    <section className="grid place-items-center"
+    <section
+      className="grid place-items-center"
       style={{
         height: "100vh",
       }}
