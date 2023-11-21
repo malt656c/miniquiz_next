@@ -7,11 +7,12 @@ import { useState } from "react";
 /* styling for swipeableList */
 const swipeableListStyle = {
   height: "100%",
+  maxHeight: "900px",
   width: "100%",
+  maxWidth: "600px",
   display: "grid",
   outline: "1px solid red",
 };
-
 export default function SwipeList(props) {
   /* states */
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -20,9 +21,12 @@ export default function SwipeList(props) {
     rotation: `rotate(${0}deg)`,
     translate: 0,
   });
+  const [currentFilters, setCurrentFilters] = useState([]);
   /* definition af content */
   const quizContent = props.content;
   let Question = quizContent[currentQuestion];
+  let rightAnswer = Question?.svarListe[1];
+  let leftAnswer = Question.svarListe[0];
   /* funktion for swipe til højre */
   const SwipeRight = () => {
     setCurrentQuestion(currentQuestion + 1);
@@ -38,11 +42,12 @@ export default function SwipeList(props) {
         translate: 0,
       });
     }, 500);
-    console.log(Question);
+    console.log(currentFilters);
+    setCurrentFilters(currentFilters.concat([rightAnswer?.filter]));
   };
   const SwipeRightActions = () => (
     <LeadingActions>
-      <SwipeAction onClick={() => SwipeRight()}></SwipeAction>
+      <SwipeAction onClick={() => SwipeRight()}>&nbsp;</SwipeAction>
     </LeadingActions>
   );
   /* funktion for swipe til venstre */
@@ -60,45 +65,47 @@ export default function SwipeList(props) {
         translate: 0,
       });
     }, 500);
-    console.log(Question);
+    console.log(currentFilters);
+    setCurrentFilters(currentFilters.concat([leftAnswer?.filter]));
   };
   const SwipeLeftActions = () => (
     <TrailingActions>
-      <SwipeAction onClick={() => SwipeLeft()}></SwipeAction>
+      <SwipeAction onClick={() => SwipeLeft()}>&nbsp;</SwipeAction>
     </TrailingActions>
   );
+  /* funktion for swipe animation */
+  const SwipeProgress = (p, d) => {
+    if (d == "right") {
+      setCurrentStyles({
+        opacity: currentStyles.opacity,
+        rotation: `rotate(${p}deg)`,
+        translate: currentStyles.translate,
+      });
+    } else if (d == "left") {
+      setCurrentStyles({
+        opacity: currentStyles.opacity,
+        rotation: `rotate(${-p}deg)`,
+        translate: currentStyles.translate,
+      });
+    }
+  };
   return (
-    <SwipeableList style={swipeableListStyle} threshold={0.25}>
+    <SwipeableList style={swipeableListStyle} swipeStartThreshold={5} threshold={0.25}>
       <SwipeableListItem
         leadingActions={SwipeRightActions()}
         trailingActions={SwipeLeftActions()}
         onSwipeProgress={(p, d) => {
-          if (d == "right") {
-            setCurrentStyles({
-              opacity: currentStyles.opacity,
-              rotation:     `rotate(${p}deg)`,
-              translate: currentStyles.translate,
-            });
-          } else if (d == "left") {
-            setCurrentStyles({
-              opacity: currentStyles.opacity,
-              rotation: `rotate(${-p}deg)`,
-              translate: currentStyles.translate,
-            })
-          }
+          SwipeProgress(p, d);
         }}
         onSwipeEnd={() => {
           setCurrentStyles({
             opacity: currentStyles.opacity,
-            rotation:`rotate(${0}deg)`,
+            rotation: `rotate(${0}deg)`,
             translate: currentStyles.translate,
-          })
+          });
         }}
       >
-        <SwipeCard
-          content={Question}
-          transferedStyle={currentStyles}
-        ></SwipeCard>
+        <SwipeCard content={Question} transferedStyle={currentStyles} rightAnswer={rightAnswer?.svar} leftAnswer={leftAnswer?.svar}></SwipeCard>
       </SwipeableListItem>
     </SwipeableList>
   );
