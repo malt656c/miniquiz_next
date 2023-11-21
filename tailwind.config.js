@@ -6,9 +6,6 @@ module.exports = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },    fontFamily: {
-        centuryGothic: ["Century Gothic", "sans-serif"],
-        headings: ["ltc-caslon-pro", "serif"],
       },
     },
   },
@@ -28,7 +25,9 @@ module.exports = {
       desktop: "1280px",
       // => @media (min-width: 1280px) { ... }
     },
-
-
+    fontFamily: {
+      centuryGothic: ["century-gothic", "sans-serif"],
+      headings: ["ltc-caslon-pro", "serif"],
+    },
   },
 };
