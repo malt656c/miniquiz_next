@@ -17,7 +17,6 @@ export default function QuizContent(props) {
   let backgroundImageStyle = {
     backgroundImage: `url(${currentQuestion?.baggrundsbillede})`,
   };
-  console.log(backgroundImageStyle);
   const onGoBack = () => {
     if (questionCount !== 0) {
       setQuestionCount(questionCount - 1);
@@ -33,30 +32,30 @@ export default function QuizContent(props) {
   console.log(currentFilters);
   console.log(products.filter((i) => !currentFilters.flat().includes(i.categories[3] || i.categories[4])));
   return (
-    <div className="grid place-items-center bg-no-repeat bg-center object-contain h-150 w-90" style={backgroundImageStyle}>
+    <div className="flex flex-col place-items-center bg-center bg-cover h-screen max-w-[400px]" style={backgroundImageStyle}>
       <div className="w-96 text-xl">
         <QuizQuestion content={currentQuestion?.spørgsmål} />
       </div>
-
-      <div className="flex gap-4 px-2 flex-wrap w-26 ">
-        {currentQuestion?.svarListe.map((s) => {
-          return (
-            <QuizAnswerButton
-              key={Math.random()}
-              content={s.svar}
-              clickEvent={() => {
-                onAnswer(s.filter);
-              }}
-              ikon={s.ikon}
-            />
-          );
-        })}
+      <div className=" mt-auto flex flex-col gap-2">
+        <div className="flex gap-3 px-2 flex-wrap w-26  ">
+          {currentQuestion?.svarListe.map((s) => {
+            return (
+              <QuizAnswerButton
+                key={Math.random()}
+                content={s.svar}
+                clickEvent={() => {
+                  onAnswer(s.filter);
+                }}
+                ikon={s.ikon}
+              />
+            );
+          })}
+        </div>
+        <div className=" p-2 w-80 h-40  rounded-xl">{currentQuestion?.tip && <Tips content={currentQuestion?.tip} />}</div>
+        <div className=" mb-2 grid place-content-center">
+          <QuizBackButton clickEvent={onGoBack} />
+        </div>
       </div>
-      <div className="grid place-items-center p-2 w-80 h-40">
-        <Tips content={currentQuestion?.tip} />
-      </div>
-
-      <QuizBackButton clickEvent={onGoBack} />
     </div>
   );
 }

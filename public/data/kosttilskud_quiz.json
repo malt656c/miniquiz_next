@@ -37,16 +37,7 @@
       },
       {
         "svar": "Over 50 år",
-        "filter": [
-          "Graviditet",
-          "Vitaminer til gravide",
-          "Vitaminer til Børn",
-          "Øvrige børnevitaminer",
-          "Multivitaminer til børn",
-          "Mælkesyrebakterier til børn",
-          "D-vitamin til børn",
-          "Børnevitaminer"
-        ]
+        "filter": ["Graviditet", "Vitaminer til gravide", "Vitaminer til Børn", "Øvrige børnevitaminer", "Multivitaminer til børn", "Mælkesyrebakterier til børn", "D-vitamin til børn", "Børnevitaminer"]
       }
     ]
   },
@@ -189,7 +180,7 @@
     ]
   },
   {
-    "spørgsmål": "Føler du dig stresset? (spgsm:6)",
+    "spørgsmål": "Føler du dig ofte stresset i din hverdag? (spgsm:6)",
     "baggrundsbillede": "img/stress.jpg",
     "tip": "Der findes flere kosttilskud som kan være med til at give din krop balance. Rosenrod fx er et adaptogen som tilpasser sig din krop og giver dig det du har brug for.",
     "svarListe": [
@@ -271,20 +262,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": [
-          "Kollagen",
-          "Hud, Hår & Negle",
-          "Silica",
-          "A-vitamin",
-          "Betacaroten",
-          "Zink",
-          "Selen",
-          "Kollagenpiller",
-          "Kollagenpulver",
-          "Kosttilskud til håret",
-          "Kosttilskud til neglene",
-          "Kosttilskud til huden"
-        ],
+        "filter": ["Kollagen", "Hud, Hår & Negle", "Silica", "A-vitamin", "Betacaroten", "Zink", "Selen", "Kollagenpiller", "Kollagenpulver", "Kosttilskud til håret", "Kosttilskud til neglene", "Kosttilskud til huden"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
