@@ -10,7 +10,7 @@
     ]
   },
   {
-    "spørgsmål": "hvad er dit køn?",
+    "spørgsmål": "hvad er dit køn? (spgsm:1)",
     "baggrundsbillede": "img/pille.jpg",
     "svarListe": [
       {
@@ -34,7 +34,7 @@
     ]
   },
   {
-    "spørgsmål": "hvad er din alder? spgs0",
+    "spørgsmål": "hvad er din alder? (spgsm:0)",
     "baggrundsbillede": "img/pillevingummi.jpg",
     "svarListe": [
       {
@@ -125,7 +125,7 @@
   },
 
   {
-    "spørgsmål": "om dig (kvinde)",
+    "spørgsmål": "om dig (kvinde)(spgsm:2)",
     "svarListe": [
       {
         "svar": "gravid",
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "spørgsmål": "om dig (mand)",
+    "spørgsmål": "om dig (mand) (spgsm:4)",
     "baggrundsbillede": "img/slut.jpg",
     "svarListe": [
       {
@@ -179,7 +179,7 @@
   },
 
   {
-    "spørgsmål": "Oplever du problemer med fordøjelsen?",
+    "spørgsmål": "Oplever du problemer med fordøjelsen? (spgsm:5)",
     "baggrundsbillede": "img/fordoejelse.jpg",
     "tip": "Mange er sensitive overfor gluten og/eller laktose uden at være allergiske. det betyder dog stadig at du kan have svært ved at fordøje.",
     "svarListe": [
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "spørgsmål": "Føler du dig stresset?",
+    "spørgsmål": "Føler du dig stresset? (spgsm:6)",
     "baggrundsbillede": "img/stress.jpg",
     "tip": "Der findes flere kosttilskud som kan være med til at give din krop balance. Rosenrod fx er et adaptogen som tilpasser sig din krop og giver dig det du har brug for.",
     "svarListe": [
@@ -217,9 +217,9 @@
     ]
   },
   {
-    "spørgsmål": "Oplever du problemer med vægttab?",
+    "spørgsmål": "Oplever du problemer med vægttab? (spgsm:7)",
     "baggrundsbillede": "img/vaegttab.jpg",
-    "tip": "Selvom maden er sund, kan du stadig være i kalorieoverskud. Sørg for at spise mad der mætter og giv din krop ordentlig brændstof.",
+    "tip": "Selvom maden er sund, kan du stadig være i kalorieoverskud. Sørg for at spise mad der mætter og giv din krop ordentlig brændstof. Hvis du er i kalorieoverskud tager du på og omvendt.",
     "svarListe": [
       {
         "svar": "nej",
@@ -236,7 +236,7 @@
     ]
   },
   {
-    "spørgsmål": "Bliver du tit syg eller har svækket immunforsvar?",
+    "spørgsmål": "Bliver du tit syg eller har svækket immunforsvar (spgsm:8)?",
     "baggrundsbillede": "img/immun.jpg",
     "tip": "Kroppen bliver svækket når du er stresset, ikke spiser ordentligt osv. Pas på dig selv og sørg for at få en god multivitamin. Specielt i de hårde perioder.",
     "svarListe": [
@@ -255,7 +255,7 @@
     ]
   },
   {
-    "spørgsmål": "Mangler du energi og oplever du dårlig søvn?",
+    "spørgsmål": "Mangler du energi og oplever du dårlig søvn? (spgsm:9)",
     "baggrundsbillede": "img/soevn.jpg",
     "tip": "Tag en lur",
     "svarListe": [
@@ -274,7 +274,7 @@
     ]
   },
   {
-    "spørgsmål": "Lider du af hårtab og/eller svage negle?",
+    "spørgsmål": "Lider du af hårtab og/eller svage negle (spgsm:10)",
     "baggrundsbillede": "img/haarognegle.jpg",
     "tip": "Massage på hænder og i hårbund sætter gang i blodcirkulationen og kan afhjælpe svage negle og hårtab",
     "svarListe": [
@@ -293,7 +293,7 @@
     ]
   },
   {
-    "spørgsmål": "Oplever du besvær ved dine led og muskler?",
+    "spørgsmål": "Oplever du besvær ved dine led og muskler? (spgsm:11)",
     "baggrundsbillede": "img/musklerogled.jpg",
     "tip": "Det er ikke unormalt at få inflammation omkring leddene. Gurkemeje virker anti-inflammatorisk og hjælper på inflammation i  kroppen",
     "svarListe": [
@@ -312,7 +312,7 @@
     ]
   },
   {
-    "spørgsmål": "Ønsker du at detoxe kroppen?",
+    "spørgsmål": "Ønsker du at detoxe kroppen? (spgsm:12)",
     "baggrundsbillede": "img/detox.jpg",
     "tip": "Tag en lur",
     "svarListe": [
@@ -331,7 +331,7 @@
     ]
   },
   {
-    "spørgsmål": "Oplever du hukommelsesbesvær?",
+    "spørgsmål": "Oplever du hukommelsesbesvær? (spgsm:13)",
     "baggrundsbillede": "img/hukommelse.jpg",
     "tip": "Rosenrod er det man kalder et adaptogen som giver kroppen hvad den har brug for",
     "svarListe": [
@@ -364,25 +364,6 @@
         "svar": "ja",
         "filter": [],
         "nextQuestion": 6,
-        "ikon": "yes.svg"
-      }
-    ]
-  },
-  {
-    "spørgsmål": "Tillykke, du har gennemført quizzen!",
-    "baggrundsbillede": "img/slut.jpg",
-    "tip": "Vi har fundet en række produkter som kan dække dine behov. Er du interesseret i at se dem?",
-    "svarListe": [
-      {
-        "svar": "nej",
-        "filter": [],
-        "nextQuestion": 7,
-        "ikon": "no.svg"
-      },
-      {
-        "svar": "ja",
-        "fitler": [],
-        "nextQuestion": 7,
         "ikon": "yes.svg"
       }
     ]
