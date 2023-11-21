@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+      <link rel="stylesheet" href="https://use.typekit.net/viy4rqy.css" />
     </html>
   );
 }

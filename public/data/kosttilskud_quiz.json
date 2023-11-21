@@ -1,7 +1,7 @@
 [
   {
     "spørgsmål": "Start Quiz",
-    "baggrundsbillede": "img/forsidequiz.jpeg",
+    "baggrundsbillede": "img/forside.jpeg",
     "svarListe": [
       {
         "svar": "Find dit Match",
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "spørgsmål": "hvad er dit køn? (spgsm:1)",
+    "spørgsmål": "Hvad er dit køn?",
     "baggrundsbillede": "img/pille.jpg",
     "svarListe": [
       {
@@ -24,21 +24,29 @@
         "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
         "nextQuestion": 4,
         "ikon": "mand.svg"
-      },
-      {
-        "svar": "andet",
-        "filter": [],
-        "nextQuestion": 1,
-        "ikon": "nonbinaer.svg"
       }
     ]
   },
   {
-    "spørgsmål": "hvad er din alder? (spgsm:0)",
+    "spørgsmål": "Hvad er din alder?",
+    "baggrundsbillede": "img/immun.jpg",
+    "svarListe": [
+      {
+        "svar": "Under 50 år",
+        "filter": []
+      },
+      {
+        "svar": "Over 50 år",
+        "filter": ["Graviditet", "Vitaminer til gravide", "Vitaminer til Børn", "Øvrige børnevitaminer", "Multivitaminer til børn", "Mælkesyrebakterier til børn", "D-vitamin til børn", "Børnevitaminer"]
+      }
+    ]
+  },
+  {
+    "spørgsmål": "Hvad Passer bedst til dig",
     "baggrundsbillede": "img/pillevingummi.jpg",
     "svarListe": [
       {
-        "svar": "Barn",
+        "svar": "Under 15 år",
         "filter": [
           "Loppefrøskaller",
           "D-vitamin",
@@ -109,59 +117,33 @@
           " Hukommelse"
         ]
       },
+
       {
-        "svar": "Teen",
-        "filter": ["Graviditet", "Vitaminer til gravide", "Overgangsalderen", "Vitaminer til Børn", "Slankekosttilskud", "Rødkløver", "Folsyre"]
-      },
-      {
-        "svar": "Voksen",
-        "filter": ["Overgangsalderen", "Vitaminer til Børn"]
-      },
-      {
-        "svar": "50+",
-        "filter": ["Gravitditet", "Vitaminer til gravide", "Vitaminer til Børn"]
+        "svar": "Over 15 år",
+        "filter": ["Vitaminer til Børn", "Øvrige børnevitaminer","Multivitaminer til børn", "Mælkesyrebakterier til børn", "D-vitamin til børn", "Børnevitaminer" ]
       }
     ]
   },
 
   {
-    "spørgsmål": "om dig (kvinde)(spgsm:2)",
-    "svarListe": [
-      {
-        "svar": "gravid",
-        "filter": [],
-        "nextQuestion": 3
-      },
-      {
-        "svar": "overgangsalder",
-        "filter": ["Folsyre"],
-        "nextQuestion": 3
-      },
-      {
-        "svar": "Blodfortyndende medicin",
-        "filter": ["Folsyre", "Fiskeolie & Omega 3"],
-        "nextQuestion": 3
-      },
-      {
-        "svar": "andet",
-        "filter": ["Folsyre"],
-        "nextQuestion": 3
-      }
-    ]
-  },
-  {
-    "spørgsmål": "om dig (mand) (spgsm:4)",
+    "spørgsmål": "om dig (kvinde)",
     "baggrundsbillede": "img/slut.jpg",
     "svarListe": [
       {
-        "svar": "Blodfortyndende medicin",
-        "filter": ["Fiskeolie & Omega 3", "Krill Olie", "Omega kombinationer", "Torskelevertran", " Omega-3"],
-        "nextQuestion": 5
+        "svar": "gravid",
+        "filter": ["Overgangsalder", "Menstruation"],
+        "nextQuestion": 3
       },
       {
+        "svar": "Overgangsalder",
+        "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Menstruation"],
+        "nextQuestion": 3
+      },
+  
+      {
         "svar": "andet",
-        "filter": [],
-        "nextQuestion": 5
+        "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Overgangsalder"],
+        "nextQuestion": 3
       }
     ]
   },
@@ -185,7 +167,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["Loppefrøskaller", "Fordøjelse", "Fiber", "Mælkesyrebakterier"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -204,7 +186,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": [],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -223,7 +205,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["Slankekosttilskud"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -242,7 +224,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["C-vitamin", "Immunforsvar", "Gele Royale"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -261,7 +243,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["Baldrian", "Energi", "Ginseng", "Søvn"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -280,7 +262,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["Kollagen", "Hud, Hår & Negle", "Silica", "A-vitamin", "Betacaroten", "Zink", "Selen", "Kollagenpiller", "Kollagenpulver", "Kosttilskud til håret", "Kosttilskud til neglene", "Kosttilskud til huden"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -299,7 +281,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["Gurkemeje", "Ingefær", "Knogler, Led & Muskler"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -318,7 +300,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["Hvidløg", "Hyben", "Æbleeddike", "Chlorella"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -337,7 +319,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["Krill Olie", "Omega Kombinationer", " Omega-3", "Torskelevertran ", " Hukommelse"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -356,7 +338,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Loppefrøskaller", "Fordøjesle", "Fibre", "Mælkesyrebakterier"],
+        "filter": ["D-vitamin"],
         "nextQuestion": 6,
         "ikon": "no.svg"
       },
@@ -368,4 +350,114 @@
       }
     ]
   }
+]
+
+
+
+//---Alt under her slettes asap----//
+
+[
+  
+  "Multivitaminer",
+  "Kalk",
+  "Multimineraler",
+  "Hjertet",
+
+  "Magnesium",
+  "Q10",
+  
+  
+  ,
+  "Jern",
+  
+  "B-vitamin",
+  
+  
+  "Øvrige kosttilskud",
+
+  
+  "Kolesterol",
+  
+  "Synet",
+  
+  "Urter",
+  "K-vitamin",
+  
+  
+  "Chrom",
+  "Blåbær",
+  
+  "Kredsløb",
+  
+  
+  
+  
+  "Hjerne ",
+ 
+  "Jod & Kalium",
+  
+  "Aminosyre",
+  
+  
+  "Øvrige olier",
+ 
+  
+  "B12 vitamin",
+  "Øvrige",
+  
+]
+
+
+
+//---Alt under her slettes asap----//
+
+[
+  
+  "Multivitaminer",
+  "Kalk",
+  "Multimineraler",
+  "Hjertet",
+
+  "Magnesium",
+  "Q10",
+  
+  
+  ,
+  "Jern",
+  
+  "B-vitamin",
+  
+  
+  "Øvrige kosttilskud",
+
+  
+  "Kolesterol",
+  
+  "Synet",
+  
+  "Urter",
+  "K-vitamin",
+  
+  
+  "Chrom",
+  "Blåbær",
+  
+  "Kredsløb",
+  
+  
+  
+  
+  "Hjerne ",
+ 
+  "Jod & Kalium",
+  
+  "Aminosyre",
+  
+  
+  "Øvrige olier",
+ 
+  
+  "B12 vitamin",
+  "Øvrige",
+  
 ]
