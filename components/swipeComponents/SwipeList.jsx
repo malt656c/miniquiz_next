@@ -4,6 +4,7 @@ import "react-swipeable-list/dist/styles.css";
 import SwipeCard from "./SwipeCard";
 import { useState } from "react";
 import Image from "next/image";
+import QuizEndpage from "../QuizEndpage";
 /* styling for swipeableList */
 let swipeableListStyle = {
   height: "100%",
@@ -12,7 +13,8 @@ let swipeableListStyle = {
   maxWidth: "600px",
   display: "grid",
   outline: "1px solid red",
-};  let productList;
+};
+let productList;
 export default function SwipeList(props) {
   /* states */
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -32,22 +34,7 @@ export default function SwipeList(props) {
 
   const OnEnd = () => {
     swipeableListStyle = { display: "none" };
-
-    productList = (
-      <ul className="flex flex-wrap gap-4 p-4 justify-center max-w-[1500px]">
-        {products?.map((i) => {
-          return (
-            <li key={i?.id} className="outline outline-1 p-4 flex-grow max-w-[150px]">
-              <div className=" grid gap-4 place-items-center">
-                <Image src={i.image} width={100} height={100} alt={i.name}></Image>
-                <span className="font-bold">{i.name}</span>
-                <span>{i.price}</span>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
-    );
+    productList = <QuizEndpage products={products}></QuizEndpage>;
   };
   /* funktion for swipe til højre */
   const SwipeRight = () => {
@@ -113,9 +100,11 @@ export default function SwipeList(props) {
       });
     }
   };
+
   return (
     <>
       {productList}
+
       <SwipeableList style={swipeableListStyle} swipeStartThreshold={5} threshold={0.25}>
         <SwipeableListItem
           leadingActions={SwipeRightActions()}
