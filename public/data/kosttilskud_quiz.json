@@ -1,28 +1,12 @@
 [
   {
-    "spørgsmål": "Start Quiz",
-    "baggrundsbillede": "img/forside.jpeg",
-    "svarListe": [
-      {
-        "svar": "start",
-        "filter": [],
-        "nextQuestion": 1
-      }  ,    {
-        "svar": "start",
-        "filter": [],
-        "nextQuestion": 1
-      }
-    ]
-  },
-
-  {
     "spørgsmål": "Er du over 50 år gammel?",
     "baggrundsbillede": "img/immun.jpg",
     "svarListe": [
       {
         "svar": "Nej",
         "filter": [],
-        "nextQuestion": 2
+        "nextQuestion": 1
       },
       {
         "svar": "Ja",
@@ -36,7 +20,7 @@
           "D-vitamin til børn",
           "Børnevitaminer"
         ],
-        "nextQuestion": 5
+        "nextQuestion": 4
       }
     ]
   },
@@ -115,51 +99,16 @@
           " Omega-3",
           " Hukommelse"
         ],
-        "nextQuestion": 3
+        "nextQuestion": 2
       },
       {
         "svar": "ja",
         "filter": ["Vitaminer til Børn", "Øvrige børnevitaminer", "Multivitaminer til børn", "Mælkesyrebakterier til børn", "D-vitamin til børn", "Børnevitaminer"],
-        "nextQuestion": 4
+        "nextQuestion": 3
       }
     ]
   },
   {
-    "spørgsmål": "Hvad er dit køn?",
-    "baggrundsbillede": "img/pille.jpg",
-    "svarListe": [
-      {
-        "svar": "kvinde",
-        "filter": [],
-        "nextQuestion": 8,
-        "ikon": "dame.svg"
-      },
-      {
-        "svar": "Mand",
-        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
-        "nextQuestion": 8,
-        "ikon": "mand.svg"
-      }
-    ]
-  },
-  {
-    "spørgsmål": "Hvad er dit køn?",
-    "baggrundsbillede": "img/pille.jpg",
-    "svarListe": [
-      {
-        "svar": "kvinde",
-        "filter": [],
-        "nextQuestion": 6,
-        "ikon": "dame.svg"
-      },
-      {
-        "svar": "Mand",
-        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
-        "nextQuestion": 8,
-        "ikon": "mand.svg"
-      }
-    ]
-  },  {
     "spørgsmål": "Hvad er dit køn?",
     "baggrundsbillede": "img/pille.jpg",
     "svarListe": [
@@ -172,7 +121,42 @@
       {
         "svar": "Mand",
         "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
-        "nextQuestion": 8,
+        "nextQuestion": 7,
+        "ikon": "mand.svg"
+      }
+    ]
+  },
+  {
+    "spørgsmål": "Hvad er dit køn?",
+    "baggrundsbillede": "img/pille.jpg",
+    "svarListe": [
+      {
+        "svar": "kvinde",
+        "filter": [],
+        "nextQuestion": 5,
+        "ikon": "dame.svg"
+      },
+      {
+        "svar": "Mand",
+        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
+        "nextQuestion": 7,
+        "ikon": "mand.svg"
+      }
+    ]
+  },  {
+    "spørgsmål": "Hvad er dit køn?",
+    "baggrundsbillede": "img/pille.jpg",
+    "svarListe": [
+      {
+        "svar": "kvinde",
+        "filter": [],
+        "nextQuestion": 6,
+        "ikon": "dame.svg"
+      },
+      {
+        "svar": "Mand",
+        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
+        "nextQuestion": 7,
         "ikon": "mand.svg"
       }
     ]
@@ -184,12 +168,12 @@
       {
         "svar": "ja",
         "filter": ["Overgangsalder", "Menstruation"],
-        "nextQuestion": 8
+        "nextQuestion": 7
       },
       {
         "svar": "nej",
         "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Overgangsalder"],
-        "nextQuestion": 8
+        "nextQuestion": 7
       }
     ]
   },  {
@@ -199,13 +183,13 @@
       {
         "svar": "ja",
         "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Menstruation"],
-        "nextQuestion": 8
+        "nextQuestion": 7
       },
 
       {
         "svar": "nej",
         "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Overgangsalder"],
-        "nextQuestion": 8
+        "nextQuestion": 7
       }
     ]
   },
@@ -217,13 +201,13 @@
       {
         "svar": "nej",
         "filter": ["Loppefrøskaller", "Fordøjelse", "Fiber", "Mælkesyrebakterier"],
-        "nextQuestion": 9,
+        "nextQuestion": 8,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 9,
+        "nextQuestion": 8,
         "ikon": "yes.svg"
       }
     ]
@@ -236,13 +220,13 @@
       {
         "svar": "nej",
         "filter": [],
-        "nextQuestion": 10,
+        "nextQuestion": 9,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 10,
+        "nextQuestion": 9,
         "ikon": "yes.svg"
       }
     ]
@@ -255,13 +239,13 @@
       {
         "svar": "nej",
         "filter": ["Slankekosttilskud"],
-        "nextQuestion": 11,
+        "nextQuestion": 10,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 11,
+        "nextQuestion": 10,
         "ikon": "yes.svg"
       }
     ]
@@ -274,13 +258,13 @@
       {
         "svar": "nej",
         "filter": ["C-vitamin", "Immunforsvar", "Gele Royale"],
-        "nextQuestion": 12,
+        "nextQuestion": 11,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 12,
+        "nextQuestion": 11,
         "ikon": "yes.svg"
       }
     ]
@@ -293,13 +277,13 @@
       {
         "svar": "nej",
         "filter": ["Baldrian", "Energi", "Ginseng", "Søvn"],
-        "nextQuestion": 13,
+        "nextQuestion": 12,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 13,
+        "nextQuestion": 12,
         "ikon": "yes.svg"
       }
     ]
@@ -325,13 +309,13 @@
           "Kosttilskud til neglene",
           "Kosttilskud til huden"
         ],
-        "nextQuestion": 14,
+        "nextQuestion": 13,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 14,
+        "nextQuestion": 13,
         "ikon": "yes.svg"
       }
     ]
@@ -344,13 +328,13 @@
       {
         "svar": "nej",
         "filter": ["Gurkemeje", "Ingefær", "Knogler, Led & Muskler"],
-        "nextQuestion": 15,
+        "nextQuestion": 14,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 15,
+        "nextQuestion": 14,
         "ikon": "yes.svg"
       }
     ]
@@ -363,13 +347,13 @@
       {
         "svar": "nej",
         "filter": ["Hvidløg", "Hyben", "Æbleeddike", "Chlorella"],
-        "nextQuestion": 16,
+        "nextQuestion": 15,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 16,
+        "nextQuestion": 15,
         "ikon": "yes.svg"
       }
     ]
@@ -382,13 +366,13 @@
       {
         "svar": "nej",
         "filter": ["Krill Olie", "Omega Kombinationer", " Omega-3", "Torskelevertran ", " Hukommelse"],
-        "nextQuestion": 17,
+        "nextQuestion": 16,
         "ikon": "no.svg"
       },
       {
         "svar": "ja",
         "filter": [],
-        "nextQuestion": 17,
+        "nextQuestion": 16,
         "ikon": "yes.svg"
       }
     ]
@@ -410,17 +394,6 @@
         "nextQuestion": "end",
         "ikon": "yes.svg"
       }
-    ]
-  } , {
-    "spørgsmål": "Vi er klar til at finde dit perfekte match",
-    "baggrundsbillede": "img/pillevingummi2.jpg",
-    "svarListe": [
-      {
-        "svar": "nej",
-        "filter": [],
-        "ikon": "no.svg"
-      },
-      { "svar": "ja", "filter": [], "ikon": "yes.svg" }
     ]
   }
 ]
