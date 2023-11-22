@@ -34,6 +34,7 @@ export default function SwipeCard(props) {
       <div className="h-full w-full rounded-lg grid place-items-end p-4 text-center bg-cover bg-center shadow-sm drop-shadow-lg" style={{ backgroundImage: `url(${props.content?.baggrundsbillede})` }}>
         <div className="flex justify-between w-full">{buttonContent()}</div>
         <span className="font-headings mx-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md">{question}</span>
+        <img src="/img/striber_matas.png" alt="striber" className="absolute bottom-0 left-0 w-full h-auto top-auto" style={{ zIndex: 1 }} />
       </div>
     </div>
   );
