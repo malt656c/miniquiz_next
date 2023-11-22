@@ -1,15 +1,21 @@
 import QuizContent from "./QuizContent";
 import { promises as fs } from "fs";
+
 const quizFile = await fs.readFile(process.cwd() + "/public/data/kosttilskud_quiz.json", "utf8");
 const content = JSON.parse(quizFile);
-const categoryFile = await fs.readFile(process.cwd() + "/public/data/kosttilskud_kategorier_samlet.json", "utf8");
-const allCategories = JSON.parse(categoryFile);
+
 const productsFile = await fs.readFile(process.cwd() + "/public/data/kosttilskud_produkter.json", "utf8");
-const allproducts = JSON.parse(productsFile);
-export default function QuizWrapper() {
+const products = JSON.parse(productsFile);
+
+export default function SwipeContainer() {
   return (
-    <section className="grid gap-4 place-items-center">
-      <QuizContent content={content} categories={allCategories} products={allproducts} />
+    /* wrapper for hele skærmen */
+    <section
+      className="grid place-items-center h-screen"
+    >
+      <div className="w-full max-w-[600px] h-full max-h-[800px] grid place-items-center relative outline-4 overflow-y-auto outline-green-beige outline">
+        <QuizContent content={content} products={products}></QuizContent>
+      </div>
     </section>
   );
 }
