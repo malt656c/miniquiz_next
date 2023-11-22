@@ -56,6 +56,7 @@ export default function QuizContent(props) {
           <QuizBackButton clickEvent={onGoBack} />
         </div>
       </div>
+      <img src="/img/striber_matas.png" alt="striber" className="absolute bottom-0 left-0 w-full h-auto top-auto" style={{ zIndex: 1 }} />
     </div>
   );
 }
