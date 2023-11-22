@@ -1,4 +1,5 @@
 import SwipeList from "./SwipeList";
+import QuizFrontpage from "../QuizFrontpage";
 import { promises as fs } from "fs";
 const quizFile = await fs.readFile(process.cwd() + "/public/data/kosttilskud_quiz.json", "utf8");
 const content = JSON.parse(quizFile);
@@ -13,6 +14,7 @@ export default function SwipeContainer() {
         height: "100dvh",
       }}
     >
+<QuizFrontpage></QuizFrontpage>
       <div className="w-full max-w-[100dvw] h-[100dvh] grid place-items-center">
         <SwipeList content={content} products={products}></SwipeList>
       </div>

@@ -16,16 +16,16 @@
   },
 
   {
-    "spørgsmål": "Hvad er din alder?",
+    "spørgsmål": "Er du over 50 år gammel?",
     "baggrundsbillede": "img/immun.jpg",
     "svarListe": [
       {
-        "svar": "Under 50 år",
+        "svar": "Nej",
         "filter": [],
         "nextQuestion": 2
       },
       {
-        "svar": "Over 50 år",
+        "svar": "Ja",
         "filter": [
           "Graviditet",
           "Vitaminer til gravide",
@@ -41,11 +41,11 @@
     ]
   },
   {
-    "spørgsmål": "Er du over eller under 15?",
+    "spørgsmål": "Er du over 15 år gammel?",
     "baggrundsbillede": "img/pillevingummi.jpg",
     "svarListe": [
       {
-        "svar": "Under 15 år",
+        "svar": "nej",
         "filter": [
           "Loppefrøskaller",
           "D-vitamin",
@@ -118,14 +118,14 @@
         "nextQuestion": 3
       },
       {
-        "svar": "Over 15 år",
+        "svar": "ja",
         "filter": ["Vitaminer til Børn", "Øvrige børnevitaminer", "Multivitaminer til børn", "Mælkesyrebakterier til børn", "D-vitamin til børn", "Børnevitaminer"],
         "nextQuestion": 4
       }
     ]
   },
   {
-    "spørgsmål": "Hvad er dit køn? (<15)",
+    "spørgsmål": "Hvad er dit køn?",
     "baggrundsbillede": "img/pille.jpg",
     "svarListe": [
       {
@@ -143,7 +143,7 @@
     ]
   },
   {
-    "spørgsmål": "Hvad er dit køn? (50>_>15)",
+    "spørgsmål": "Hvad er dit køn?",
     "baggrundsbillede": "img/pille.jpg",
     "svarListe": [
       {
@@ -160,7 +160,7 @@
       }
     ]
   },  {
-    "spørgsmål": "Hvad er dit køn? (>50)",
+    "spørgsmål": "Hvad er dit køn?",
     "baggrundsbillede": "img/pille.jpg",
     "svarListe": [
       {

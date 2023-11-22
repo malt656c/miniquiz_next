@@ -3,7 +3,7 @@ import { LeadingActions, SwipeableList, SwipeableListItem, SwipeAction, Trailing
 import "react-swipeable-list/dist/styles.css";
 import SwipeCard from "./SwipeCard";
 import { useState } from "react";
-
+import Image from "next/image";
 /* styling for swipeableList */
 let swipeableListStyle = {
   height: "100%",
@@ -39,7 +39,7 @@ export default function SwipeList(props) {
           return (
             <li key={i?.id} className="outline outline-1 p-4 flex-grow max-w-[150px]">
               <div className=" grid gap-4 place-items-center">
-                <img src={i.image} alt="" className="max-w-[100px] max-h-[100px] object-cover" />
+                <Image src={i.image} width={100} height={100} alt={i.name}></Image>
                 <span className="font-bold">{i.name}</span>
                 <span>{i.price}</span>
               </div>
