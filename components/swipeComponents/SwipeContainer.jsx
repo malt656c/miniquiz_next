@@ -15,7 +15,7 @@ export default function SwipeContainer() {
       }}
     >
 <QuizFrontpage></QuizFrontpage>
-      <div className="w-full max-w-[100dvw] h-[100dvh] grid place-items-center">
+      <div className="w-full max-w-[600px] h-full max-h-[900px] grid place-items-center relative">
         <SwipeList content={content} products={products}></SwipeList>
       </div>
     </section>

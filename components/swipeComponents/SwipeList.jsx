@@ -5,6 +5,7 @@ import SwipeCard from "./SwipeCard";
 import { useState } from "react";
 import Image from "next/image";
 import QuizEndpage from "../QuizEndpage";
+import ProductList from "../ProductList";
 /* styling for swipeableList */
 let swipeableListStyle = {
   height: "100%",
@@ -14,7 +15,7 @@ let swipeableListStyle = {
   display: "grid",
   outline: "1px solid red",
 };
-let productList;
+let EndPage;
 export default function SwipeList(props) {
   /* states */
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -24,6 +25,7 @@ export default function SwipeList(props) {
     translate: 0,
   });
   const [currentFilters, setCurrentFilters] = useState([]);
+  const [content, setContent] = useState("quiz");
   /* definition af content */
   const quizContent = props.content;
   let Question = quizContent[currentQuestion];
@@ -33,8 +35,7 @@ export default function SwipeList(props) {
   /* funktion for når quizzen er slut */
 
   const OnEnd = () => {
-    swipeableListStyle = { display: "none" };
-    productList = <QuizEndpage products={products}></QuizEndpage>;
+setContent("endScreen")
   };
   /* funktion for swipe til højre */
   const SwipeRight = () => {
@@ -100,11 +101,9 @@ export default function SwipeList(props) {
       });
     }
   };
-
+/* TODO add if/else statements ans usestate to switch between content */
+if(content == "quiz"){
   return (
-    <>
-      {productList}
-
       <SwipeableList style={swipeableListStyle} swipeStartThreshold={5} threshold={0.25}>
         <SwipeableListItem
           leadingActions={SwipeRightActions()}
@@ -123,6 +122,15 @@ export default function SwipeList(props) {
           <SwipeCard content={Question} transferedStyle={currentStyles} rightAnswer={rightAnswer?.svar} leftAnswer={leftAnswer?.svar}></SwipeCard>
         </SwipeableListItem>
       </SwipeableList>
-    </>
   );
+} else if(content=="endScreen"){
+  return(
+    <QuizEndpage getproducts={()=>{setContent("productsScreen")}}></QuizEndpage>
+  )
+}else if(content=="productsScreen"){
+  return(
+    <ProductList content={products}></ProductList>
+  )
+}
+  
 }
