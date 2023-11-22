@@ -52,7 +52,7 @@ export default function QuizContent(props) {
           })}
         </div>
         <div className=" p-2 w-80 h-40  rounded-xl">{currentQuestion?.tip && <Tips content={currentQuestion?.tip} />}</div>
-        <div className=" mb-2 grid place-content-center">
+        <div className=" mb-6 grid place-content-center">
           <QuizBackButton clickEvent={onGoBack} />
         </div>
       </div>
