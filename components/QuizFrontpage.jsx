@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function QuizFrontpage(props) {
   return (
-    <div className="max-h-[600px] m-auto">
+    <div className="m-auto">
       <div className="grid place-items-center bg-no-repeat bg-center bg-cover absolute inset-0 z-10" style={{ backgroundImage: 'url("./img/forside.jpeg")' }}>
         <button type="button" className="bg-green-beige font-centuryGothic rounded-lg px-6 py-3 text-center text-xl transition-all hover:scale-105 hover:drop-shadow-md mt-auto" onClick={props.onStart}>
           Find dit Match
