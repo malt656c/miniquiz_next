@@ -46,7 +46,7 @@ export default function SwipeCard(props) {
 
         {Tip()}
         <div className="m-auto">
-          <QuizBackButton></QuizBackButton>
+          <QuizBackButton clickEvent={props.onGoBack}></QuizBackButton>
         </div>
         <Image src="/img/striber_matas.png" alt="striber" className="absolute bottom-0 left-0 right-0 top-auto z-10" width={664} height={32} />
       </div>
