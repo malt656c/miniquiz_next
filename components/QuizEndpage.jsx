@@ -4,7 +4,7 @@ export default function QuizEndpage(props) {
   return (
     <>
       <div className="grid place-items-center bg-no-repeat bg-center bg-cover absolute inset-0 z-20 p-4 gap-4" style={{ backgroundImage: 'url("./img/slut1.jpg")' }}>
-        <Confetti className="w-full max-w-[600px] h-full max-h-[800px]" recycle={false} numberOfPieces={1000} tweenDuration={10000}/>
+        <Confetti className="w-full max-w-[600px] h-full max-h-[800px]" recycle={false} numberOfPieces={1000} tweenDuration={10000} colors={['#EF84AB','#E71B7C', '#44BDEE','#2774AE','#694796']}/>
         <p className="p-4 bg-green-beige rounded-xl font-headings text-2xl text-center">Tillykke du har gennemført Quizzen</p>
         <button
           onClick={props.getproducts}

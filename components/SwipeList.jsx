@@ -12,12 +12,13 @@ export default function SwipeList(props) {
     rotation: `rotate(${0}deg)`,
     translate: 0,
   });
+  const [lastQuestion, setLastQuestion] = useState([]);
   const [currentFilters, setCurrentFilters] = useState([]);
   /* definition af content */
   const quizContent = props.content;
   let Question = quizContent[currentQuestion];
   let rightAnswer = Question?.svarListe[1];
-  let leftAnswer = Question.svarListe[0];
+  let leftAnswer = Question?.svarListe[0];
   /* funktion for når quizzen er slut */
 
   /* funktion for swipe til højre */
@@ -25,6 +26,7 @@ export default function SwipeList(props) {
     if (leftAnswer.nextQuestion == "end") {
       props.OnEnd(currentFilters);
     } else setCurrentQuestion(rightAnswer.nextQuestion);
+    setLastQuestion(lastQuestion.concat(currentQuestion));
     setCurrentStyles({
       opacity: 0,
       rotation: `rotate(${0}deg)`,
@@ -36,6 +38,7 @@ export default function SwipeList(props) {
         rotation: `rotate(${0}deg)`,
         translate: 0,
       });
+      console.log(lastQuestion);
     }, 500);
     setCurrentFilters(currentFilters.concat([rightAnswer?.filter]));
   };
@@ -49,6 +52,7 @@ export default function SwipeList(props) {
     if (leftAnswer.nextQuestion == "end") {
       props.OnEnd(currentFilters);
     } else setCurrentQuestion(leftAnswer.nextQuestion);
+    setLastQuestion(lastQuestion.concat(currentQuestion));
     setCurrentStyles({
       opacity: 0,
       rotation: `rotate(${0}deg)`,
@@ -60,6 +64,7 @@ export default function SwipeList(props) {
         rotation: `rotate(${0}deg)`,
         translate: 0,
       });
+      console.log(lastQuestion);
     }, 500);
     setCurrentFilters(currentFilters.concat([leftAnswer?.filter]));
   };
@@ -110,7 +115,24 @@ export default function SwipeList(props) {
           });
         }}
       >
-        <SwipeCard content={Question} transferedStyle={currentStyles} rightPress={SwipeRight} leftPress={SwipeLeft}></SwipeCard>
+        <SwipeCard
+          content={Question}
+          transferedStyle={currentStyles}
+          rightPress={SwipeRight}
+          leftPress={SwipeLeft}
+          onGoBack={() => {
+            if ([...lastQuestion].pop() !== undefined) {
+              let lastQuestionCopy = [...lastQuestion];
+              let lastQuestionCopyPopped = lastQuestionCopy.pop();
+              setLastQuestion(lastQuestionCopy);
+              setCurrentQuestion(lastQuestionCopyPopped);
+ 
+              let currentFiltersCopy=[...currentFilters]
+              currentFiltersCopy.pop()
+              setCurrentFilters(currentFiltersCopy)
+            }
+          }}
+        ></SwipeCard>
       </SwipeableListItem>
     </SwipeableList>
   );
