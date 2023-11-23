@@ -1,4 +1,5 @@
 import Confetti from "react-confetti";
+import Image from "next/image";
 export default function QuizEndpage(props) {
   return (
     <>
@@ -16,7 +17,7 @@ export default function QuizEndpage(props) {
         <div>
           <p className="p-4 bg-green-beige rounded-xl font-headings text-2xl text-center">Vi har fundet en række produkter som kan dække dine behov.</p>
         </div>
-        <img src="/img/striber_matas.png" alt="striber" className="absolute bottom-0 left-0 w-full h-auto top-auto" style={{ zIndex: 1 }} />
+        <Image src="/img/striber_matas.png" alt="striber" className="absolute bottom-0 left-0 right-0 top-auto z-10" width={664} height={32} />
       </div>
     </>
   );

@@ -6,15 +6,16 @@ export default function SwipeCard(props) {
     if (props.content.svarListe[0].ikon === undefined || props.content.svarListe[1].ikon === undefined) {
       return (
         <>
-          <span className="bg-green-beige p-4 rounded-lg drop-shadow-md">{props.content.svarListe[0].svar}</span>
-          <span className="bg-green-beige p-4 rounded-lg drop-shadow-md">{props.content.svarListe[1].svar}</span>
+          <button className="bg-green-beige p-4 rounded-lg drop-shadow-md" onClick={()=>{props.leftPress()}}>{props.content.svarListe[0].svar}</button>
+          <button className="bg-green-beige p-4 rounded-lg drop-shadow-md"onClick={()=>{props.rightPress()}}>{props.content.svarListe[1].svar}</button>
         </>
       );
     } else {
       return (
-        <>
-          <Image src={`img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
-          <Image src={`img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
+        <><button onClick={()=>{props.leftPress()}}><Image src={`img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" /></button>
+
+          <button onClick={()=>{props.rightPress()}}><Image src={`img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" /></button>
+          
         </>
       );
     }

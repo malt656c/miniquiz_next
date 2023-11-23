@@ -110,7 +110,7 @@ export default function SwipeList(props) {
           });
         }}
       >
-        <SwipeCard content={Question} transferedStyle={currentStyles} rightAnswer={rightAnswer?.svar} leftAnswer={leftAnswer?.svar}></SwipeCard>
+        <SwipeCard content={Question} transferedStyle={currentStyles} rightPress={SwipeRight} leftPress={SwipeLeft}></SwipeCard>
       </SwipeableListItem>
     </SwipeableList>
   );
