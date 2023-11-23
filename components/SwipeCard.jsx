@@ -41,8 +41,8 @@ export default function SwipeCard(props) {
       }}
     >
       <div className="h-full w-full rounded-lg grid place-items-end p-4 text-center bg-cover bg-center shadow-sm drop-shadow-lg" style={{ backgroundImage: `url(${props.content?.baggrundsbillede})` }}>
-        <span className="font-headings mx-auto mb-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md">{props.content?.spørgsmål}</span>
-        <div className="flex justify-between w-full">{buttonContent()}</div>
+        <span className="font-headings mx-auto mb-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md ">{props.content?.spørgsmål}</span>
+        <div className="flex justify-between w-full desktop:justify-center desktop:gap-5">{buttonContent()}</div>
 
         {Tip()}
         <div className="m-auto">
