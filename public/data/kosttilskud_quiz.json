@@ -5,7 +5,7 @@
     "svarListe": [
       {
         "svar": "Nej",
-        "filter": [],
+        "filter": ["Multimineraler", "Kalk", "Kredsløb", "Kolesterol", "Hjertet", "Synet", "Q10"],
         "nextQuestion": 1
       },
       {
@@ -97,7 +97,8 @@
           "Øvrige",
           "Kosttilskud til huden",
           " Omega-3",
-          " Hukommelse"
+          " Hukommelse",
+          "Jern"
         ],
         "nextQuestion": 2
       },
@@ -114,15 +115,15 @@
     "svarListe": [
       {
         "svar": "kvinde",
-        "filter": [],
+        "filter": [""],
         "nextQuestion": 7,
-        "ikon": "dame.png"
+        "ikon": "dame.svg"
       },
       {
         "svar": "Mand",
-        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
+        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre", "Jern"],
         "nextQuestion": 7,
-        "ikon": "mand.png"
+        "ikon": "mand.svg"
       }
     ]
   },
@@ -134,13 +135,13 @@
         "svar": "kvinde",
         "filter": [],
         "nextQuestion": 5,
-        "ikon": "dame.png"
+        "ikon": "dame.svg"
       },
       {
         "svar": "Mand",
-        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
+        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre", "Jern"],
         "nextQuestion": 7,
-        "ikon": "mand.png"
+        "ikon": "mand.svg"
       }
     ]
   },  {
@@ -151,13 +152,13 @@
         "svar": "kvinde",
         "filter": [],
         "nextQuestion": 6,
-        "ikon": "dame.png"
+        "ikon": "dame.svg"
       },
       {
         "svar": "Mand",
-        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
+        "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre", "Jern"],
         "nextQuestion": 7,
-        "ikon": "mand.png"
+        "ikon": "mand.svg"
       }
     ]
   },
@@ -172,7 +173,7 @@
       },
       {
         "svar": "nej",
-        "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Overgangsalder"],
+        "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet"],
         "nextQuestion": 7
       }
     ]
@@ -182,13 +183,13 @@
     "svarListe": [
       {
         "svar": "ja",
-        "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Menstruation"],
+        "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Menstruation", "Jern", "K-vitamin"],
         "nextQuestion": 7
       },
 
       {
         "svar": "nej",
-        "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Overgangsalder"],
+        "filter": ["Folsyre", "Vitaminer til gravide", "Graviditet", "Overgangsalder", "Jern"],
         "nextQuestion": 7
       }
     ]
@@ -219,7 +220,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": [],
+        "filter": ["B12 vitamin"],
         "nextQuestion": 9,
         "ikon": "no.svg"
       },
@@ -238,7 +239,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Slankekosttilskud"],
+        "filter": ["Slankekosttilskud", "Chrom", "Jod & Kalium"],
         "nextQuestion": 10,
         "ikon": "no.svg"
       },
@@ -257,7 +258,7 @@
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["C-vitamin", "Immunforsvar", "Gele Royale"],
+        "filter": ["C-vitamin", "Immunforsvar", "Gele Royale", "Multivitaminer"],
         "nextQuestion": 11,
         "ikon": "no.svg"
       },
@@ -272,11 +273,11 @@
   {
     "spørgsmål": "Mangler du energi og oplever du dårlig søvn?",
     "baggrundsbillede": "img/soevn.jpg",
-    "tip": "Tag en lur",
+    "tip": "Hvis du mangler ro i kroppen kan magnesium hjælpe dine muskler med at slappe af hvis du tager det inden sengetid.",
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Baldrian", "Energi", "Ginseng", "Søvn"],
+        "filter": ["Baldrian", "Energi", "Ginseng", "Søvn", "Magnesium"],
         "nextQuestion": 12,
         "ikon": "no.svg"
       },
@@ -291,7 +292,7 @@
   {
     "spørgsmål": "Lider du af hårtab og/eller svage negle?",
     "baggrundsbillede": "img/haarognegle.jpg",
-    "tip": "Massage på hænder og i hårbund sætter gang i blodcirkulationen og kan afhjælpe svage negle og hårtab",
+    "tip": "Massage på hænder og i hårbund sætter gang i blodcirkulationen og kan afhjælpe svage negle og hårtab.",
     "svarListe": [
       {
         "svar": "nej",
@@ -307,7 +308,8 @@
           "Kollagenpulver",
           "Kosttilskud til håret",
           "Kosttilskud til neglene",
-          "Kosttilskud til huden"
+          "Kosttilskud til huden",
+          "B-vitamin"
         ],
         "nextQuestion": 13,
         "ikon": "no.svg"
@@ -321,13 +323,13 @@
     ]
   },
   {
-    "spørgsmål": "Oplever du besvær ved dine led og muskler?",
+    "spørgsmål": "Oplever du besvær med dine led og muskler?",
     "baggrundsbillede": "img/musklerogled.jpg",
-    "tip": "Det er ikke unormalt at få inflammation omkring leddene. Gurkemeje virker anti-inflammatorisk og hjælper på inflammation i  kroppen",
+    "tip": "Det er ikke unormalt at få inflammation omkring leddene. Gurkemeje og ingefær virker anti-inflammatorisk og hjælper på inflammation i kroppen",
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Gurkemeje", "Ingefær", "Knogler, Led & Muskler"],
+        "filter": ["Gurkemeje", "Ingefær", "Knogler", "Led & Muskler", "Aminosyre"],
         "nextQuestion": 14,
         "ikon": "no.svg"
       },
@@ -342,11 +344,11 @@
   {
     "spørgsmål": "Ønsker du at detoxe kroppen?",
     "baggrundsbillede": "img/detox.jpg",
-    "tip": "Tag en lur",
+    "tip": "Der findes mange måder at detoxe på. Du har måske hørt om juice kure som ''skyller'' systemet? dette er en myte og ikke fysisk muligt. Prøv istedet et kosttilskud med antioxidanter og drik mere vand.",
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Hvidløg", "Hyben", "Æbleeddike", "Chlorella"],
+        "filter": ["Hvidløg", "Hyben", "Æbleeddike", "Chlorella", "Urter", "Blåbær"],
         "nextQuestion": 15,
         "ikon": "no.svg"
       },
@@ -361,11 +363,11 @@
   {
     "spørgsmål": "Oplever du hukommelsesbesvær?",
     "baggrundsbillede": "img/hukommelse.jpg",
-    "tip": "Rosenrod er det man kalder et adaptogen som giver kroppen hvad den har brug for",
+    "tip": "Fiskeolie er god næring til hjernen. Fedtsyren DHA, som fiskeolie bl. a. består af, bidrager til at vedligeholde en normal hjernefunktion",
     "svarListe": [
       {
         "svar": "nej",
-        "filter": ["Krill Olie", "Omega Kombinationer", " Omega-3", "Torskelevertran ", " Hukommelse"],
+        "filter": ["Krill Olie", "Omega Kombinationer", " Omega-3", "Torskelevertran ", " Hukommelse", "Hjerne", "Øvrige olier"],
         "nextQuestion": 16,
         "ikon": "no.svg"
       },
@@ -380,7 +382,7 @@
   {
     "spørgsmål": "Oplever du tit humørsvingninger?",
     "baggrundsbillede": "img/humorsvingninger.jpg",
-    "tip": "De fleste danskere mangler D-vitamin og det betyder meget for humøret. Sørg for at få D vitamin, specielt i vinterhalvåret.",
+    "tip": "De fleste danskere mangler D-vitamin som vi får af sollys, og det betyder meget for humøret. Sørg for at få D-vitamin, specielt i vinterhalvåret.",
     "svarListe": [
       {
         "svar": "nej",

@@ -32,7 +32,7 @@ export default function SwipeCard(props) {
               props.leftPress();
             }}
           >
-            <Image src={`img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
+            <Image src={`/img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
           </button>
 
           <button
@@ -40,7 +40,7 @@ export default function SwipeCard(props) {
               props.rightPress();
             }}
           >
-            <Image src={`img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
+            <Image src={`/img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
           </button>
         </>
       );
