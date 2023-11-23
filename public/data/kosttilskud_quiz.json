@@ -116,13 +116,13 @@
         "svar": "kvinde",
         "filter": [],
         "nextQuestion": 7,
-        "ikon": "dame.svg"
+        "ikon": "dame.png"
       },
       {
         "svar": "Mand",
         "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
         "nextQuestion": 7,
-        "ikon": "mand.svg"
+        "ikon": "mand.png"
       }
     ]
   },
@@ -134,13 +134,13 @@
         "svar": "kvinde",
         "filter": [],
         "nextQuestion": 5,
-        "ikon": "dame.svg"
+        "ikon": "dame.png"
       },
       {
         "svar": "Mand",
         "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
         "nextQuestion": 7,
-        "ikon": "mand.svg"
+        "ikon": "mand.png"
       }
     ]
   },  {
@@ -151,13 +151,13 @@
         "svar": "kvinde",
         "filter": [],
         "nextQuestion": 6,
-        "ikon": "dame.svg"
+        "ikon": "dame.png"
       },
       {
         "svar": "Mand",
         "filter": ["Graviditet", "Vitaminer til gravide", "Menstruation", "Overgangsalder", "Kosttilskud til kvinder", "Tranebær", "Rødkløver", "Folsyre"],
         "nextQuestion": 7,
-        "ikon": "mand.svg"
+        "ikon": "mand.png"
       }
     ]
   },
