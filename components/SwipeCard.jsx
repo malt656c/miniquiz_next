@@ -1,4 +1,5 @@
 import Image from "next/image";
+import QuizBackButton from "./QuizBackButton";
 const iconSize = 60;
 export default function SwipeCard(props) {
   const buttonContent = () => {
@@ -27,7 +28,7 @@ export default function SwipeCard(props) {
   };
   return (
     <div
-      className="p-8 flex h-full w-full max-h-[600px] max-w-[400px] m-auto"
+      className="p-8 flex h-full w-full max-w-[400px] m-auto"
       style={{
         transform: props.transferedStyle.rotation,
         opacity: props.transferedStyle.opacity,
@@ -35,13 +36,17 @@ export default function SwipeCard(props) {
         transition: " translate 0.5s",
         transition: "opacity 0.5s",
         transformOrigin: "center bottom",
-        userSelect:"none",
+        userSelect: "none",
       }}
     >
       <div className="h-full w-full rounded-lg grid place-items-end p-4 text-center bg-cover bg-center shadow-sm drop-shadow-lg" style={{ backgroundImage: `url(${props.content?.baggrundsbillede})` }}>
         <span className="font-headings mx-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md">{props.content?.spørgsmål}</span>
         <div className="flex justify-between w-full">{buttonContent()}</div>
+
         {Tip()}
+        <div className="m-auto">
+          <QuizBackButton></QuizBackButton>
+        </div>
         <Image src="/img/striber_matas.png" alt="striber" className="absolute bottom-0 left-0 right-0 top-auto z-10" width={664} height={32} />
       </div>
     </div>
