@@ -28,7 +28,7 @@ export default function SwipeCard(props) {
   };
   return (
     <div
-      className="p-8 flex h-full w-full max-w-[400px] m-auto"
+      className="p-8 flex h-full w-full max-h-[700px] max-w-[400px] m-auto"
       style={{
         transform: props.transferedStyle.rotation,
         opacity: props.transferedStyle.opacity,
@@ -40,7 +40,7 @@ export default function SwipeCard(props) {
       }}
     >
       <div className="h-full w-full rounded-lg grid place-items-end p-4 text-center bg-cover bg-center shadow-sm drop-shadow-lg" style={{ backgroundImage: `url(${props.content?.baggrundsbillede})` }}>
-        <span className="font-headings mx-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md">{props.content?.spørgsmål}</span>
+        <span className="font-headings mx-auto mb-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md">{props.content?.spørgsmål}</span>
         <div className="flex justify-between w-full">{buttonContent()}</div>
 
         {Tip()}
