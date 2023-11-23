@@ -12,9 +12,9 @@ export default function SwipeCard(props) {
       );
     } else {
       return (
-        <><button onClick={()=>{props.leftPress()}}><Image src={`img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" /></button>
+        <><button onClick={()=>{props.leftPress()}}><Image src={`img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md desktop:w-24" /></button>
 
-          <button onClick={()=>{props.rightPress()}}><Image src={`img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" /></button>
+          <button onClick={()=>{props.rightPress()}}><Image src={`img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md desktop:w-24" /></button>
           
         </>
       );
