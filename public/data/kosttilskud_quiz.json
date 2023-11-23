@@ -5,11 +5,13 @@
     "svarListe": [
       {
         "svar": "Nej",
+        "ikon": "no.svg",
         "filter": ["Multimineraler", "Kalk", "Kredsløb", "Kolesterol", "Hjertet", "Synet", "Q10"],
         "nextQuestion": 1
       },
       {
         "svar": "Ja",
+        "ikon":"yes.svg",
         "filter": [
           "Graviditet",
           "Vitaminer til gravide",
