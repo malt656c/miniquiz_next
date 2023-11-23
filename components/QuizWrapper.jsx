@@ -11,7 +11,7 @@ export default function SwipeContainer() {
   return (
     /* wrapper for hele skærmen */
     <section
-      className="grid place-items-center h-screen h-[100dvh]"
+      className="grid place-items-center h-[100dvh]"
     >
       <div className="w-full max-w-[600px] h-full max-h-[800px] grid place-items-center relative outline-4 overflow-y-auto outline-green-beige outline">
         <QuizContent content={content} products={products}></QuizContent>

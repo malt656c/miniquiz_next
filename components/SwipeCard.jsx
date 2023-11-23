@@ -32,7 +32,7 @@ export default function SwipeCard(props) {
               props.leftPress();
             }}
           >
-            <Image src={`/img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
+            <Image src={`/img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md w-24" />
           </button>
 
           <button
@@ -40,7 +40,7 @@ export default function SwipeCard(props) {
               props.rightPress();
             }}
           >
-            <Image src={`/img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
+            <Image src={`/img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md w-24" />
           </button>
         </>
       );
@@ -75,9 +75,9 @@ export default function SwipeCard(props) {
         className="h-full w-full rounded-lg grid place-items-end p-4 text-center bg-cover bg-center shadow-sm drop-shadow-lg"
         style={{ backgroundImage: `url(${props.content?.baggrundsbillede})` }}
       >
-        <span className="font-headings mx-auto mb-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md">{props.content?.spørgsmål}</span>
+        <span className="font-headings mx-auto mb-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md desktop:text-2xl">{props.content?.spørgsmål}</span>
         <div className="grid gap-4 w-full p-4">
-          <div className="flex justify-between w-full">{buttonContent()}</div>
+          <div className="flex justify-between w-full desktop:justify-center desktop:gap-4">{buttonContent()}</div>
 
           {Tip()}
           <div className="m-auto">
