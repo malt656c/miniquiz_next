@@ -21,14 +21,14 @@ export default function SwipeCard(props) {
   };
   const Tip = () => {
     if (props.content?.tip !== undefined) {
-      return <span className="font-centuryGothic mx-auto bg-green-beige p-4 rounded-lg text-l drop-shadow-md">{props.content?.tip}</span>;
+      return <span className="font-centuryGothic mx-auto bg-green-beige p-4 rounded-lg text-l drop-shadow-md desktop:w-[400px] dektop:text-xl">{props.content?.tip}</span>;
     } else {
       return <span className="font-centuryGothic mx-auto bg-transparent p-4 rounded-lg text-l drop-shadow-md">{props.content?.tip}</span>;
     }
   };
   return (
     <div
-      className="p-8 flex h-full w-full max-w-[400px] m-auto"
+      className="p-8 flex h-full w-full max-w-[400px] m-auto desktop:max-w-[800px]"
       style={{
         transform: props.transferedStyle.rotation,
         opacity: props.transferedStyle.opacity,
@@ -41,7 +41,7 @@ export default function SwipeCard(props) {
     >
       <div className="h-full w-full rounded-lg grid place-items-end p-4 text-center bg-cover bg-center shadow-sm drop-shadow-lg" style={{ backgroundImage: `url(${props.content?.baggrundsbillede})` }}>
         <span className="font-headings mx-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md">{props.content?.spørgsmål}</span>
-        <div className="flex justify-between w-full">{buttonContent()}</div>
+        <div className="flex justify-between w-full desktop:">{buttonContent()}</div>
 
         {Tip()}
         <div className="m-auto">
