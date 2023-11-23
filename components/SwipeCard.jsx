@@ -6,23 +6,53 @@ export default function SwipeCard(props) {
     if (props.content.svarListe[0].ikon === undefined || props.content.svarListe[1].ikon === undefined) {
       return (
         <>
-          <button className="bg-green-beige p-4 rounded-lg drop-shadow-md" onClick={()=>{props.leftPress()}}>{props.content.svarListe[0].svar}</button>
-          <button className="bg-green-beige p-4 rounded-lg drop-shadow-md"onClick={()=>{props.rightPress()}}>{props.content.svarListe[1].svar}</button>
+          <button
+            className="bg-green-beige p-4 rounded-lg drop-shadow-md"
+            onClick={() => {
+              props.leftPress();
+            }}
+          >
+            {props.content.svarListe[0].svar}
+          </button>
+          <button
+            className="bg-green-beige p-4 rounded-lg drop-shadow-md"
+            onClick={() => {
+              props.rightPress();
+            }}
+          >
+            {props.content.svarListe[1].svar}
+          </button>
         </>
       );
     } else {
       return (
-        <><button onClick={()=>{props.leftPress()}}><Image src={`img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" /></button>
+        <>
+          <button
+            onClick={() => {
+              props.leftPress();
+            }}
+          >
+            <Image src={`img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
+          </button>
 
-          <button onClick={()=>{props.rightPress()}}><Image src={`img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" /></button>
-          
+          <button
+            onClick={() => {
+              props.rightPress();
+            }}
+          >
+            <Image src={`img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
+          </button>
         </>
       );
     }
   };
   const Tip = () => {
     if (props.content?.tip !== undefined) {
-      return <span className="font-centuryGothic mx-auto bg-green-beige p-4 rounded-lg text-l drop-shadow-md desktop:w-[400px] dektop:text-xl">{props.content?.tip}</span>;
+      return (
+        <div className="font-centuryGothic mx-auto bg-green-beige p-4 rounded-lg text-l drop-shadow-md  w-full desktop:max-w-[400px] dektop:text-xl">
+          <span>{props.content?.tip}</span>
+        </div>
+      );
     } else {
       return <span className="font-centuryGothic mx-auto bg-transparent p-4 rounded-lg text-l drop-shadow-md">{props.content?.tip}</span>;
     }
@@ -40,15 +70,18 @@ export default function SwipeCard(props) {
         userSelect: "none",
       }}
     >
-      <div className="h-full w-full rounded-lg grid place-items-end p-4 text-center bg-cover bg-center shadow-sm drop-shadow-lg" style={{ backgroundImage: `url(${props.content?.baggrundsbillede})` }}>
+      <div className="h-full w-full rounded-lg grid place-items-end p-4 text-center bg-cover bg-center shadow-sm drop-shadow-lg relative" style={{ backgroundImage: `url(${props.content?.baggrundsbillede})` }}>
+        <div className="from-no-red to-transparent absolute top-0 right-0 bottom-0 w-1/2 z-20">.</div>
         <span className="font-headings mx-auto mb-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md">{props.content?.spørgsmål}</span>
-        <div className="flex justify-between w-full">{buttonContent()}</div>
+        <div className="grid gap-4 w-full p-4">
+          <div className="flex justify-between w-full">{buttonContent()}</div>
 
-        {Tip()}
-        <div className="m-auto">
-          <QuizBackButton clickEvent={props.onGoBack}></QuizBackButton>
+          {Tip()}
+          <div className="m-auto">
+            <QuizBackButton clickEvent={props.onGoBack}></QuizBackButton>
+          </div>
+          <Image src="/img/striber_matas.png" alt="striber" className="absolute bottom-0 left-0 right-0 top-auto z-10" width={664} height={32} />
         </div>
-        <Image src="/img/striber_matas.png" alt="striber" className="absolute bottom-0 left-0 right-0 top-auto z-10" width={664} height={32} />
       </div>
     </div>
   );

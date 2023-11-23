@@ -17,6 +17,8 @@ module.exports = {
       "matas-blue": "#002643",
       "matas-white": "#FFFFFF",
       "matas-grey": "#F0EDEB",
+      "no-red": "#D54C32",
+      "yes-green": "#2DE273",
     },
     screens: {
       tablet: "640px",
