@@ -38,7 +38,7 @@ export default function SwipeList(props) {
         rotation: `rotate(${0}deg)`,
         translate: 0,
       });
-      console.log(lastQuestion);
+
     }, 500);
     setCurrentFilters(currentFilters.concat([rightAnswer?.filter]));
   };
@@ -64,7 +64,7 @@ export default function SwipeList(props) {
         rotation: `rotate(${0}deg)`,
         translate: 0,
       });
-      console.log(lastQuestion);
+
     }, 500);
     setCurrentFilters(currentFilters.concat([leftAnswer?.filter]));
   };
