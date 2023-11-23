@@ -78,13 +78,13 @@ export default function SwipeList(props) {
     if (d == "right") {
       setCurrentStyles({
         opacity: currentStyles.opacity,
-        rotation: `rotate(${p}deg)`,
+        rotation: `rotate(${p / 2}deg)`,
         translate: currentStyles.translate,
       });
     } else if (d == "left") {
       setCurrentStyles({
         opacity: currentStyles.opacity,
-        rotation: `rotate(${-p}deg)`,
+        rotation: `rotate(${-(p / 2)}deg)`,
         translate: currentStyles.translate,
       });
     }
@@ -97,6 +97,7 @@ export default function SwipeList(props) {
         width: "100%",
         maxWidth: "600px",
         display: "grid",
+        position: "relative",
       }}
       swipeStartThreshold={30}
       threshold={0.25}
@@ -126,10 +127,10 @@ export default function SwipeList(props) {
               let lastQuestionCopyPopped = lastQuestionCopy.pop();
               setLastQuestion(lastQuestionCopy);
               setCurrentQuestion(lastQuestionCopyPopped);
- 
-              let currentFiltersCopy=[...currentFilters]
-              currentFiltersCopy.pop()
-              setCurrentFilters(currentFiltersCopy)
+
+              let currentFiltersCopy = [...currentFilters];
+              currentFiltersCopy.pop();
+              setCurrentFilters(currentFiltersCopy);
             }
           }}
         ></SwipeCard>
