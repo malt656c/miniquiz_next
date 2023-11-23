@@ -49,7 +49,8 @@ export default function SwipeCard(props) {
   const Tip = () => {
     if (props.content?.tip !== undefined) {
       return (
-        <div className="font-centuryGothic mx-auto bg-green-beige p-4 rounded-lg text-l drop-shadow-md  w-full desktop:max-w-[400px] dektop:text-xl">
+        <div className="font-centuryGothic mx-auto bg-green-beige p-4 rounded-lg drop-shadow-md  w-full desktop:max-w-[400px] dektop:text-xl">
+          <h2 className="font-bold text-xl">Tip!</h2>
           <span>{props.content?.tip}</span>
         </div>
       );
