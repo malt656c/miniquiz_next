@@ -59,7 +59,7 @@ export default function SwipeCard(props) {
   };
   return (
     <div
-      className="p-8 flex h-full w-full max-w-[400px] m-auto desktop:max-w-[800px]"
+      className="p-8 flex h-full w-full max-w-[400px] max-h-[700px] m-auto desktop:max-w-[800px] desktop:max-h-[unset]"
       style={{
         transform: props.transferedStyle.rotation,
         opacity: props.transferedStyle.opacity,
@@ -70,8 +70,10 @@ export default function SwipeCard(props) {
         userSelect: "none",
       }}
     >
-      <div className="h-full w-full rounded-lg grid place-items-end p-4 text-center bg-cover bg-center shadow-sm drop-shadow-lg relative" style={{ backgroundImage: `url(${props.content?.baggrundsbillede})` }}>
-        <div className="from-no-red to-transparent absolute top-0 right-0 bottom-0 w-1/2 z-20">.</div>
+      <div
+        className="h-full w-full rounded-lg grid place-items-end p-4 text-center bg-cover bg-center shadow-sm drop-shadow-lg"
+        style={{ backgroundImage: `url(${props.content?.baggrundsbillede})` }}
+      >
         <span className="font-headings mx-auto mb-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md">{props.content?.spørgsmål}</span>
         <div className="grid gap-4 w-full p-4">
           <div className="flex justify-between w-full">{buttonContent()}</div>
@@ -80,7 +82,7 @@ export default function SwipeCard(props) {
           <div className="m-auto">
             <QuizBackButton clickEvent={props.onGoBack}></QuizBackButton>
           </div>
-          <Image src="/img/striber_matas.png" alt="striber" className="absolute bottom-0 left-0 right-0 top-auto z-10" width={664} height={32} />
+          <Image src="/img/striber_matas.png" alt="striber" className="absolute bottom-0 left-0 right-0 top-auto z-10 rounded-b-lg" width={664} height={32} />
         </div>
       </div>
     </div>
