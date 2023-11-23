@@ -93,7 +93,7 @@ export default function SwipeList(props) {
         maxWidth: "600px",
         display: "grid",
       }}
-      swipeStartThreshold={10}
+      swipeStartThreshold={30}
       threshold={0.25}
     >
       <SwipeableListItem
