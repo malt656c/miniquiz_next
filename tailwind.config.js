@@ -14,6 +14,9 @@ module.exports = {
   theme: {
     colors: {
       "green-beige": "#D7DFCF",
+      "matas-blue": "#002643",
+      "matas-white": "#FFFFFF",
+      "matas-grey": "#F0EDEB",
     },
     screens: {
       tablet: "640px",

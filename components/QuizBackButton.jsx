@@ -8,3 +8,4 @@ export default function QuizBackButton(props) {
     </div>
   );
 }
+//http://localhost:3000/img/yes.svghttp://localhost:3000/img/yes.svghttp://localhost:3000/img/yes.svg

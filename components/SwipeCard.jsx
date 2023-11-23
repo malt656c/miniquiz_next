@@ -6,15 +6,16 @@ export default function SwipeCard(props) {
     if (props.content.svarListe[0].ikon === undefined || props.content.svarListe[1].ikon === undefined) {
       return (
         <>
-          <span className="bg-green-beige p-4 rounded-lg drop-shadow-md">{props.content.svarListe[0].svar}</span>
-          <span className="bg-green-beige p-4 rounded-lg drop-shadow-md">{props.content.svarListe[1].svar}</span>
+          <button className="bg-green-beige p-4 rounded-lg drop-shadow-md" onClick={()=>{props.leftPress()}}>{props.content.svarListe[0].svar}</button>
+          <button className="bg-green-beige p-4 rounded-lg drop-shadow-md"onClick={()=>{props.rightPress()}}>{props.content.svarListe[1].svar}</button>
         </>
       );
     } else {
       return (
-        <>
-          <Image src={`img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
-          <Image src={`img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" />
+        <><button onClick={()=>{props.leftPress()}}><Image src={`img/${props.content.svarListe[0]?.ikon}`} alt={props.content.svarListe[0].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" /></button>
+
+          <button onClick={()=>{props.rightPress()}}><Image src={`img/${props.content.svarListe[1]?.ikon}`} alt={props.content.svarListe[1].svar} width={iconSize} height={iconSize} className="bg-green-beige p-1 rounded-lg drop-shadow-md" /></button>
+          
         </>
       );
     }
@@ -40,8 +41,8 @@ export default function SwipeCard(props) {
       }}
     >
       <div className="h-full w-full rounded-lg grid place-items-end p-4 text-center bg-cover bg-center shadow-sm drop-shadow-lg" style={{ backgroundImage: `url(${props.content?.baggrundsbillede})` }}>
-        <span className="font-headings mx-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md">{props.content?.spørgsmål}</span>
-        <div className="flex justify-between w-full desktop:">{buttonContent()}</div>
+        <span className="font-headings mx-auto mb-auto bg-green-beige p-4 rounded-lg text-xl drop-shadow-md">{props.content?.spørgsmål}</span>
+        <div className="flex justify-between w-full">{buttonContent()}</div>
 
         {Tip()}
         <div className="m-auto">
